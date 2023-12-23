@@ -12,7 +12,7 @@ export default {
     },
     container: {
       padding: {
-        DEFAULT: "1rem",
+        DEFAULT: "15px",
         sm: "28px",
         md: "38px",
         lg: "46px",
