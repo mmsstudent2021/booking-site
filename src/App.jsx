@@ -1,10 +1,11 @@
 import React from "react";
-import HotelChain from "./components/HotelChain";
+import Home from "./pages/Home";
+import Chain from "./pages/Chain";
 
 const App = () => {
   return (
     <div>
-      <HotelChain />
+      <Chain />
     </div>
   );
 };
