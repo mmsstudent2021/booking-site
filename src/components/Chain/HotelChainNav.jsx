@@ -118,11 +118,39 @@ const HotelChainNav = () => {
 
           <div className="flex gap-3 justify-end items-center">
             <ul className="hidden lg:flex text-base">
-              <li className="p-4">
+              <li className="p-4 flex gap-[6px] items-center">
                 <a href="#">Find a hotel</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-3 h-3 mt-[2px]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
               </li>
-              <li className="p-4">
+              <li className="p-4 flex gap-[6px] items-center">
                 <a href="#">Hotel Facilities</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={3}
+                  stroke="currentColor"
+                  className="w-3 h-3 mt-[2px]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
               </li>
             </ul>
             <div>
