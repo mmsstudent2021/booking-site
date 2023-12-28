@@ -26,6 +26,8 @@ export default {
         headingColor: "#0b0a12",
         bodyColor: "#747579",
         beautifulBlue: "#5143d9",
+        hoverBgBeautifulBlue: "#4539b8",
+        hoverBorderBeautifulBlue: "#4136ae",
         success: "#0CBC87",
         danger: "#D6293E",
         warning: "#F7C32E",
