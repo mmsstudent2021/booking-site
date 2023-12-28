@@ -4,7 +4,7 @@ import Chain from "./pages/Chain";
 
 const App = () => {
   return (
-    <div>
+    <div className="font-body">
       <Chain />
     </div>
   );
