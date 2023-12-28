@@ -23,6 +23,7 @@ export default {
     extend: {
       colors: {
         bgColor: "#FFF",
+        someGray: "#F5F5F6",
         headingColor: "#0b0a12",
         bodyColor: "#747579",
         beautifulBlue: "#5143d9",

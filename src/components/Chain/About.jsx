@@ -139,7 +139,7 @@ const About = () => {
                 </svg>
               </span>
 
-              <h6 className="font-heading font-medium">Best Rate Guaranteed</h6>
+              <h6>Best Rate Guaranteed</h6>
             </li>
             <li className="py-4 flex items-center gap-3">
               <span>
@@ -196,7 +196,7 @@ const About = () => {
                   />
                 </svg>
               </span>
-              <h6 className="font-heading font-medium">Payment at Hotel</h6>
+              <h6>Payment at Hotel</h6>
             </li>
             <li className="py-4 flex items-center gap-3">
               <span>
@@ -228,9 +228,7 @@ const About = () => {
                   />
                 </svg>
               </span>
-              <h6 className="font-heading font-medium">
-                Exclusive Members Rewards
-              </h6>
+              <h6>Exclusive Members Rewards</h6>
             </li>
             <li className="py-4 flex items-center gap-3">
               <span>
@@ -267,7 +265,7 @@ const About = () => {
                   />
                 </svg>
               </span>
-              <h6 className="font-heading font-medium">WIFI Access</h6>
+              <h6>WIFI Access</h6>
             </li>
             <li className="py-4 flex items-center gap-3">
               <span>
@@ -288,7 +286,7 @@ const About = () => {
                   <circle cx={84} cy={84} r={16} />
                 </svg>
               </span>
-              <h6 className="font-heading font-medium">No Hidden Changes</h6>
+              <h6>No Hidden Changes</h6>
             </li>
           </ul>
         </div>

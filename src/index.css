@@ -15,4 +15,8 @@
   h5 {
     @apply text-[21px] leading-[26px] font-heading text-headingColor font-bold;
   }
+
+  h6 {
+    @apply font-heading font-medium;
+  }
 }
