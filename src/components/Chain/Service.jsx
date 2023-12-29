@@ -1,12 +1,50 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Glide from "@glidejs/glide";
+import ServiceCard from "./ServiceCard";
 
 const Service = () => {
+  useEffect(() => {
+    const glide = new Glide(".glide1", {
+      type: "slider",
+      startAt: 0,
+      perView: 1,
+      autoplay: 3000,
+    });
+
+    glide.mount();
+
+    return () => {
+      glide.destroy();
+    };
+  }, []);
+
+  const serviceData = [
+    {
+      id: 1,
+      img: "../../../src/img/s1.jpg",
+      heading6: "Royal Stay",
+      heading4: "Booking Grad Palace Japan",
+    },
+    {
+      id: 2,
+      img: "../../../src/img/s2.jpg",
+      heading6: "Adventure Stay",
+      heading4: "Gold & Spa Resort in New York",
+    },
+    {
+      id: 3,
+      img: "../../../src/img/s3.jpg",
+      heading6: "Honeymoon Sweets",
+      heading4: "Maldives Sunshine Hotel",
+    },
+  ];
+
   return (
     <div className="container mx-auto mt-[100px]">
       <div>
-        <div className="grid grid-cols-12 gap-8 mt-10">
-          <div className="col-span-6 grid grid-cols-12">
-            <div className="col-span-12">
+        <div className="grid grid-cols-12 items-center gap-8 mt-10">
+          <div className="col-span-12 lg:col-span-6 grid grid-cols-12">
+            <div className="col-span-12 mb-[35px]">
               <h2 className="mb-2">We Provide Our Best Facilities For You</h2>
               <p className="text-bodyColor mb-4">
                 Book your hotel with us and don't forget to grab an awesome
@@ -14,7 +52,7 @@ const Service = () => {
               </p>
               <a
                 href="#"
-                className="mb-[25px] bg-headingColor text-white px-4 py-2 rounded-md tracking-wider font-bold"
+                className="bg-headingColor text-white px-4 py-2 rounded-md tracking-wider font-bold"
               >
                 Contact Us
               </a>
@@ -186,36 +224,16 @@ const Service = () => {
               </ul>
             </div>
           </div>
-          <div className="col-span-6 grid grid-cols-12 items-center bg-someGray rounded-2xl">
-            <div className="col-span-6 px-9 py-6">
-              <img src="../../../src/img/s1.jpg" className="rounded-2xl" />
-            </div>
-            <div className="col-span-6">
-              <div>
-                <h6 className="mb-4">Royal Stay</h6>
-                <h4 className="mb-4 text-[28px] hover:text-beautifulBlue duration-300 font-heading font-bold">
-                  <a href="#">Booking Grad Palace Japan</a>
-                </h4>
-                <a
-                  className="mb-[6px] text-beautifulBlue flex gap-1 items-center"
-                  href="#"
-                >
-                  Explore Now
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-6 h-6"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                    />
-                  </svg>
-                </a>
+          <div className="col-span-12 lg:col-span-6 rounded-2xl">
+            <div className="glide1">
+              <div className="glide__track" data-glide-el="track">
+                <ul className="glide__slides">
+                  {serviceData.map((service) => (
+                    <li className="glide__slide">
+                      <ServiceCard key={service.id} service={service} />
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

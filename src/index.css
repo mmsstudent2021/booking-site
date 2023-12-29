@@ -17,6 +17,6 @@
   }
 
   h6 {
-    @apply font-heading font-medium;
+    @apply font-heading text-headingColor font-medium text-base;
   }
 }
