@@ -56,7 +56,7 @@ const Offer = () => {
   return (
     <div className="container mx-auto">
       <div className="pt-16 flex flex-col gap-6 items-center">
-        <h1 className="font-heading text-4xl font-bold"> Special Offers </h1>
+        <h3 className="font-heading text-[27px] font-bold"> Special Offers </h3>
 
         {/* <div className="container flex justify-center gap-6">
           {cards.map((card) => (

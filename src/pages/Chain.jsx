@@ -5,6 +5,7 @@ import Offer from "../components/Chain/Offer";
 import About from "../components/Chain/About";
 import Nearby from "../components/Chain/Nearby";
 import Service from "../components/Chain/Service";
+import Action from "../components/Chain/Action";
 
 const Chain = () => {
   return (
@@ -15,6 +16,7 @@ const Chain = () => {
       <About />
       <Nearby />
       <Service />
+      <Action />
     </div>
   );
 };
