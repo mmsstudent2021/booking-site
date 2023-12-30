@@ -51,7 +51,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <button
           type="button"
           className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute top-1/2 left-3 -translate-y-1/2 inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-[46px] bg-black text-white rounded-full"
@@ -94,7 +94,7 @@ const Banner = () => {
             </svg>
           </span>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -229,8 +229,8 @@ const Service = () => {
               <div className="glide__track" data-glide-el="track">
                 <ul className="glide__slides">
                   {serviceData.map((service) => (
-                    <li className="glide__slide">
-                      <ServiceCard key={service.id} service={service} />
+                    <li key={service.id} className="glide__slide">
+                      <ServiceCard service={service} />
                     </li>
                   ))}
                 </ul>
