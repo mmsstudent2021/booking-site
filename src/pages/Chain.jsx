@@ -7,6 +7,7 @@ import Nearby from "../components/Chain/Nearby";
 import Service from "../components/Chain/Service";
 import Action from "../components/Chain/Action";
 import Gallery from "../components/Chain/Gallery";
+import Footer from "../components/Chain/Footer";
 
 const Chain = () => {
   return (
@@ -19,6 +20,7 @@ const Chain = () => {
       <Service />
       <Action />
       <Gallery />
+      <Footer />
     </div>
   );
 };
