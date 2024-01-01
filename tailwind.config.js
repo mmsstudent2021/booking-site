@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/preline/dist/*.js",
   ],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       body: ["DM Sans", "sans-serif"],
@@ -19,18 +20,21 @@ export default {
     },
     extend: {
       fontFamily: {
-        "6xl": "4rem"
+        "6xl": "4rem",
       },
       colors: {
         bgColor: "#FFF",
         headingColor: "#0b0a12",
         bodyColor: "#747579",
+        "body-dark": "#222529",
+        dark: "#191b1d",
         beautifulBlue: "#5143d9",
         success: "#0CBC87",
         danger: "#D6293E",
         warning: "#F7C32E",
         info: "#17A2B8",
         blue: {
+          50: "#edecfb",
           100: "#dcd9f7",
           200: "#b9b4f0",
           300: "#978ee8",
@@ -72,8 +76,8 @@ export default {
           600: "#128293",
           700: "#0e616e",
           800: "#09414a",
-          900: "#052025"
-},
+          900: "#052025",
+        },
       },
     },
   },
