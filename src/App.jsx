@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
-import Header from "./components/home/Header";
 import { ThemeContext } from "./contexts/ThemeContext";
+import Home from "./pages/Home";
 
 const App = () => {
   const {theme} = useContext(ThemeContext);
   return (
     <div className={`${theme === "dark" && "dark"}`}>
-      <Header />
+      <div className="dark:bg-body-dark">
+        <Home />
+      </div>
     </div>
   );
 };

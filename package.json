@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flatpickr": "^4.6.13",
+    "glightbox": "^3.2.0",
     "preline": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

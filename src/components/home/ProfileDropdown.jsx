@@ -80,7 +80,7 @@ const ProfileDropdown = () => {
           <p className=" text-gray-500 dark:text-gray-400">Mode :</p>
           <div className="flex gap-x-4">
             <div className="hs-tooltip [--placement:top]">
-              <button onClick={lightTheme} className={`hs-tooltip-toggle font-medium text-blue-300 py-3 px-3 rounded-md outline-none duration-200 flex items-center gap-x-2 hover:text-blue-500 hover:bg-blue-300/[0.1] dark:text-primary-300 dark:hover:text-blue-300 dark:hover:bg-blue-300/[0.1] ${theme === "light" && "active"}`}>
+              <button onClick={lightTheme} className={`theme-btn hs-tooltip-toggle font-medium text-blue-300 py-3 px-3 rounded-md outline-none duration-200 flex items-center gap-x-2 hover:text-blue-500 hover:bg-blue-300/[0.1] dark:text-primary-300 dark:hover:text-blue-300 dark:hover:bg-blue-300/[0.1] ${theme === "light" && "active"}`}>
                 <BsSun />
                 <span
                   className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-2 px-2 bg-gray-900 text-xs font-medium text-white rounded-lg shadow-sm dark:bg-gray-100 dark:text-gray-900"
@@ -91,7 +91,7 @@ const ProfileDropdown = () => {
               </button>
             </div>
             <div className="hs-tooltip [--placement:top]">
-              <button onClick={darkTheme} className={`hs-tooltip-toggle font-medium text-blue-300 py-3 px-3 rounded-md outline-none duration-200 flex items-center gap-x-2 hover:text-blue-500 hover:bg-blue-300/[0.1] dark:text-primary-300 dark:hover:text-blue-300 dark:hover:bg-blue-300/[0.1] ${theme === "dark" && "active"}`}>
+              <button onClick={darkTheme} className={`theme-btn hs-tooltip-toggle font-medium text-blue-300 py-3 px-3 rounded-md outline-none duration-200 flex items-center gap-x-2 hover:text-blue-500 hover:bg-blue-300/[0.1] dark:text-primary-300 dark:hover:text-blue-300 dark:hover:bg-blue-300/[0.1] ${theme === "dark" && "active"}`}>
                 <BsMoonStars />
                 <span
                   className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-2 px-2 bg-gray-900 text-xs font-medium text-white rounded-lg shadow-sm dark:bg-gray-100 dark:text-gray-900"

@@ -19,7 +19,7 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
+      fontSize: {
         "6xl": "4rem",
       },
       colors: {
@@ -82,7 +82,7 @@ export default {
     },
   },
   plugins: [
-    require("preline/plugin"),
+    require("preline/plugin"), 
     function ({ addComponents }) {
       addComponents({
         ".container": {
