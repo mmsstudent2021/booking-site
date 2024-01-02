@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Poppins:wght@300;400;500;700&display=swap');
-
+@import url('../node_modules/glightbox/dist/css/glightbox.min.css');
+@import url('../node_modules/flatpickr/dist/flatpickr.min.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.animate-twinkle {
-    animation-name: twinkle;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
 .nav-link {
     @apply font-medium text-gray-900 p-2 px-3 rounded-md outline-none duration-200 flex items-center gap-x-2 hover:text-blue-500 hover:bg-blue-300/[0.1] dark:text-gray-100 dark:hover:text-blue-300 dark:hover:bg-blue-300/[0.1];
 }
-.active {
+.nav-link.active, .theme-btn.active {
     @apply text-blue-500 bg-blue-300/[0.1] dark:text-blue-300 dark:bg-blue-300/[0.1];
 }
 .dropdown-btn {
@@ -24,6 +19,9 @@
 }
 .unread-noti {
     @apply bg-blue-300/[0.1];
+}
+.hs-select {
+    @apply rounded-lg;
 }
 
 @layer utilities {
