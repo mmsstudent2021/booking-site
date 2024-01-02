@@ -17,7 +17,10 @@ const HotelChainNav = () => {
         />
       </a>
       <div className="flex justify-between items-center gap-3 font-body">
-        <div onClick={handleToggle} className="flex items-center gap-2">
+        <div
+          onClick={handleToggle}
+          className="flex items-center gap-2 cursor-pointer"
+        >
           <div className="lg:hidden h-[22px] w-[22px] flex flex-col gap-1.5 items-center justify-center">
             <div
               className={`w-full h-[2px] bg-headingColor duration-200 ${
@@ -610,6 +613,7 @@ const HotelChainNav = () => {
                     </div>
                   </div>
                 </li>
+                <hr />
                 <li className="group cursor-pointer">
                   <div className="p-4 flex justify-between lg:justify-start lg:gap-[6px] items-center hover:text-beautifulBlue duration-200">
                     <a href="#">Hotel Facilities</a>
