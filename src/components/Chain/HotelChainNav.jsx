@@ -292,7 +292,7 @@ const HotelChainNav = () => {
                         <hr className="border-hrColor border-opacity-25 mt-2" />
 
                         <div className="flex flex-col lg:flex-row  lg:gap-4 py-4">
-                          <div className="w-1/2">
+                          <div className="w-full lg:w-1/2">
                             <ul className="flex flex-col text-bodyColor">
                               <li className="w-full py-2 rounded-lg hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue duration-200">
                                 <a className="px-4" href="#">
@@ -321,7 +321,7 @@ const HotelChainNav = () => {
                               </li>
                             </ul>
                           </div>
-                          <div className="w-1/2">
+                          <div className="w-full lg:w-1/2">
                             <ul className="flex flex-col text-bodyColor">
                               <li className="w-full py-2 rounded-lg hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue duration-200">
                                 <a className="px-4" href="#">
