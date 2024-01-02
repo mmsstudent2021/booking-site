@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="bg-headingColor">
+    <footer className="bg-headingColor">
       <div className="container mx-auto pt-12">
         <div className="grid grid-cols-12">
-          <div class="xl:col-span-3 col-span-12 mb-8 xl:mb-0">
+          <div className="xl:col-span-3 col-span-12 mb-8 xl:mb-0">
             <a href="index.html">
               <img
                 className="text-white h-12 max-w-[130px]"
@@ -13,7 +13,7 @@ const Footer = () => {
               />
             </a>
 
-            <p class="my-3 text-footerParaColor">
+            <p className="my-3 text-footerParaColor">
               Departure defective arranging rapturous did believe him all had
               supported.
             </p>
