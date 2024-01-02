@@ -628,7 +628,7 @@ const HotelChainNav = () => {
                       />
                     </svg>
                   </div>
-                  <div className="opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto duration-300 absolute z-10 bg-white shadow-2xl rounded-lg border px-[10px] py-4 w-full lg:max-w-[250px] overflow-y-scroll h-[200px] lg:h-auto lg:overflow-hidden">
+                  <div className="opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto duration-300 absolute z-10 bg-white shadow-2xl rounded-lg px-[10px] py-4 w-full lg:max-w-[250px] overflow-y-scroll h-[200px] lg:h-auto lg:overflow-hidden">
                     <ul className="flex flex-col text-bodyColor">
                       <li className="w-full py-2 rounded-lg hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue duration-200">
                         <a className="px-4 flex items-center gap-2" href="#">
