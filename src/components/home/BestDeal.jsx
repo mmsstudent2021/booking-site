@@ -10,7 +10,7 @@ const BestDeal = () => {
       startAt: 0,
       gap: 20,
       perView: 3,
-      // autoplay: 3000,
+      autoplay: 3000,
       breakpoints: {
         1280: {
           perView: 2,
