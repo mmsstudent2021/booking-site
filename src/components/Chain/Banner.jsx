@@ -45,7 +45,7 @@ const Banner = () => {
               <div className="bg-black z-10 absolute left-0 top-0 w-full h-full opacity-30"></div>
               <div className="absolute top-0 z-20 flex flex-col items-center justify-center w-full h-full">
                 <div className="xl:px-[220px] lg:px-[50px] sm:px-[80px] px-[40px] flex flex-col justify-center gap-4">
-                  <div className="text-center">
+                  <div className="text-center line-clamp-1 sm:line-clamp-none">
                     <ye-h1>Taking luxury hospitality to new heights</ye-h1>
                   </div>
                   <a

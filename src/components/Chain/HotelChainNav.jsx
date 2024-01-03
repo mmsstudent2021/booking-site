@@ -16,11 +16,15 @@ const HotelChainNav = () => {
       <nav className="relative container mx-auto pt-4 lg:pb-2 pb-4 flex justify-between items-center">
         <a href="#">
           <img
-            className="h-[30px] sm:h-[40px] md:h-[60px]"
-            src="../src/img/logo-hotel.svg"
-            alt=""
+            className="h-[30px] sm:h-[40px] md:h-[60px] dark:hidden"
+            src="../src/img/logo-hotel-light.svg"
+          />
+          <img
+            className="h-[30px] sm:h-[40px] md:h-[60px] hidden dark:block"
+            src="../src/img/logo-hotel-dark.svg"
           />
         </a>
+
         <div className="flex justify-between items-center gap-3 font-body">
           <div
             onClick={handleToggle}
@@ -44,7 +48,7 @@ const HotelChainNav = () => {
               ></div>
             </div>
 
-            <p className="text-lg lg:hidden hidden sm:block dark:text-grayPara">
+            <p className="text-lg lg:hidden hidden sm:block text-headingColor dark:text-grayPara">
               Menu
             </p>
           </div>
@@ -53,7 +57,7 @@ const HotelChainNav = () => {
             <div className="hidden lg:flex border-b border-bodyColor border-opacity-30">
               <ul className="flex text-sm text-bodyColor dark:text-grayPara pb-2 pt-4">
                 <li className="px-3 hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200">
-                  <div className="hs-dropdown [--placement:bottom-right] [--auto-close:outside] relative inline-flex">
+                  <div className="hs-dropdown [--placement:bottom-right] relative inline-flex">
                     <a href="#" className="flex items-center gap-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +186,7 @@ const HotelChainNav = () => {
                   </a>
                 </li>
                 <li className="px-3 hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200">
-                  <div className="hs-dropdown [--placement:bottom-right] [--auto-close:outside] relative inline-flex">
+                  <div className="hs-dropdown [--placement:bottom-right] relative inline-flex">
                     <a href="#" className="flex items-center gap-1">
                       <span
                         id="hs-dropdown-default"
