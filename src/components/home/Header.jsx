@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`flex flex-wrap xl:justify-start xl:flex-nowrap z-50 w-full bg-white py-3 xl:py-6 dark:bg-body-dark absolute ${
+        className={`flex flex-wrap xl:justify-start xl:flex-nowrap z-50 w-full bg-white py-3 xl:py-6 dark:bg-body-dark absolute top-0 ${
           fixedNavbar && "fixed-navbar"
         }`}
       >
