@@ -61,20 +61,16 @@ const BestDeal = () => {
           </div>
           <div className="glide__arrows" data-glide-el="controls">
             <button
-              className="glide__arrow glide__arrow--left absolute h-full flex items-center top-0 left-2 "
+              className="glide__arrow glide__arrow--left absolute top-1/2 -translate-y-1/2 left-2 inline-block p-3 text-gray-100 bg-dark/30 backdrop-blur-sm rounded-full duration-300 -translate-x-[120%] md:p-[18px] group-hover:translate-x-0 hover:backdrop-blur-none dark:bg-white/30"
               data-glide-dir="<"
             >
-              <span className="inline-block p-3 text-gray-100 bg-dark/30 backdrop-blur-sm rounded-full duration-300 -translate-x-[120%] md:p-[18px] group-hover:translate-x-0 hover:backdrop-blur-none dark:bg-white/30">
-                <FaArrowLeft />
-              </span>
+              <FaArrowLeft />
             </button>
             <button
-              className="glide__arrow glide__arrow--right absolute h-full flex items-center top-0 right-2 "
+              className="glide__arrow glide__arrow--right absolute top-1/2 -translate-y-1/2 right-2 inline-block p-3 text-gray-100 bg-dark/30 backdrop-blur-sm rounded-full duration-300 translate-x-[120%] md:p-[18px] group-hover:translate-x-0 hover:backdrop-blur-none dark:bg-white/30"
               data-glide-dir=">"
             >
-              <span className="inline-block p-3 text-gray-100 bg-dark/30 backdrop-blur-sm rounded-full duration-300 translate-x-[120%] md:p-[18px] group-hover:translate-x-0 hover:backdrop-blur-none dark:bg-white/30">
-                <FaArrowRight />
-              </span>
+              <FaArrowRight />
             </button>
           </div>
         </div>
