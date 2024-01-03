@@ -32,3 +32,11 @@
     @apply font-heading text-headingColor dark:text-white text-base leading-5;
   }
 }
+
+.active {
+  @apply bg-beautifulBlue bg-opacity-10 text-beautifulBlue;
+}
+
+.active1 {
+  @apply fill-beautifulBlue;
+}

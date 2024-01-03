@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const HotelChainNav = () => {
   const [toggle, setToggle] = useState(false);
+
+  const { lightTheme, darkTheme, systemTheme, theme } =
+    useContext(ThemeContext);
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -49,7 +53,7 @@ const HotelChainNav = () => {
             <div className="hidden lg:flex border-b border-bodyColor border-opacity-30">
               <ul className="flex text-sm text-bodyColor dark:text-grayPara pb-2 pt-4">
                 <li className="px-3 hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200">
-                  <div className="hs-dropdown [--placement:bottom-right] [--auto-close:inside] relative inline-flex">
+                  <div className="hs-dropdown [--placement:bottom-right] [--auto-close:outside] relative inline-flex">
                     <a href="#" className="flex items-center gap-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +82,7 @@ const HotelChainNav = () => {
                       aria-labelledby="hs-dropdown-default"
                     >
                       <a
-                        className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:bg-opacity-10 hover:text-beautifulBlue duration-300 focus:outline-none"
+                        className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-beautifulBlue hover:bg-opacity-10 dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:text-beautifulBlue duration-300 focus:outline-none"
                         href="#"
                       >
                         <img
@@ -88,7 +92,7 @@ const HotelChainNav = () => {
                         English
                       </a>
                       <a
-                        className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:bg-opacity-10 hover:text-beautifulBlue duration-300 focus:outline-none"
+                        className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-beautifulBlue hover:bg-opacity-10 dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:text-beautifulBlue duration-300 focus:outline-none"
                         href="#"
                       >
                         <img
@@ -98,7 +102,7 @@ const HotelChainNav = () => {
                         Espanol
                       </a>
                       <a
-                        className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:bg-opacity-10 hover:text-beautifulBlue duration-300 focus:outline-none"
+                        className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-beautifulBlue hover:bg-opacity-10 dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text- hover:text-beautifulBlue duration-300 focus:outline-none"
                         href="#"
                       >
                         <img
@@ -108,7 +112,7 @@ const HotelChainNav = () => {
                         Francis
                       </a>
                       <a
-                        className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:bg-opacity-10 hover:text-beautifulBlue duration-300 focus:outline-none"
+                        className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-beautifulBlue hover:bg-opacity-10 dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:text-beautifulBlue duration-300 focus:outline-none"
                         href="#"
                       >
                         <img
@@ -178,7 +182,7 @@ const HotelChainNav = () => {
                   </a>
                 </li>
                 <li className="px-3 hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200">
-                  <div className="hs-dropdown [--placement:bottom-right] [--auto-close:inside] relative inline-flex">
+                  <div className="hs-dropdown [--placement:bottom-right] [--auto-close:outside] relative inline-flex">
                     <a href="#" className="flex items-center gap-1">
                       <span
                         id="hs-dropdown-default"
@@ -203,7 +207,10 @@ const HotelChainNav = () => {
                       aria-labelledby="hs-dropdown-default"
                     >
                       <a
-                        className="group flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor font-medium dark:text-grayPara hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue dark:hover:text-darkModeBlue dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 duration-300 focus:outline-none"
+                        onClick={lightTheme}
+                        className={`group flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor font-medium dark:text-grayPara hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue dark:hover:text-darkModeBlue dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 duration-300 focus:outline-none ${
+                          theme === "light" && "active"
+                        }`}
                         href="#"
                       >
                         <svg
@@ -212,7 +219,7 @@ const HotelChainNav = () => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-5 h-5 group-hover:fill-beautifulBlue"
+                          className="w-5 h-5 group-hover:fill-beautifulBlue active1"
                         >
                           <path
                             strokeLinecap="round"
@@ -223,7 +230,10 @@ const HotelChainNav = () => {
                         Light
                       </a>
                       <a
-                        className="group flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor font-medium dark:text-grayPara hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue dark:hover:text-darkModeBlue dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 duration-300 focus:outline-none"
+                        onClick={darkTheme}
+                        className={`group flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor font-medium dark:text-grayPara hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue dark:hover:text-darkModeBlue dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 duration-300 focus:outline-none ${
+                          theme === "dark" && "active"
+                        }`}
                         href="#"
                       >
                         <svg
@@ -232,7 +242,9 @@ const HotelChainNav = () => {
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-5 h-5 group-hover:fill-beautifulBlue"
+                          className={`w-5 h-5 group-hover:fill-beautifulBlue ${
+                            theme === "dark" && "active1"
+                          }`}
                         >
                           <path
                             strokeLinecap="round"
@@ -243,7 +255,8 @@ const HotelChainNav = () => {
                         Dark
                       </a>
                       <a
-                        className="group flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor font-medium dark:text-grayPara hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue dark:hover:text-darkModeBlue dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 duration-300 focus:outline-none"
+                        onClick={systemTheme}
+                        className={`group flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor font-medium dark:text-grayPara hover:bg-beautifulBlue hover:bg-opacity-10 hover:text-beautifulBlue dark:hover:text-darkModeBlue dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 duration-300 focus:outline-none`}
                         href="#"
                       >
                         <svg

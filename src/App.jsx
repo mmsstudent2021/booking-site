@@ -1,11 +1,15 @@
-import React from "react";
-import Home from "./pages/Home";
+import React, { useContext } from "react";
 import Chain from "./pages/Chain";
+import { ThemeContext } from "./contexts/ThemeContext";
 
 const App = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="font-body">
-      <Chain />
+    <div className={`${theme === "dark" && "dark"}`}>
+      <div>
+        <Chain />
+      </div>
     </div>
   );
 };
