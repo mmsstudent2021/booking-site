@@ -6,25 +6,25 @@ const Offer = () => {
   const cards = [
     {
       id: 1,
-      img: "../../../src/img/card1.jpg",
+      img: "./card1.jpg",
       heading: "Elevate Your Stay",
       para: "Valid through Dec 2022",
     },
     {
       id: 2,
-      img: "../../../src/img/card2.jpg",
+      img: "./card2.jpg",
       heading: "Spa Package Offer",
       para: "Valid through Feb 2023",
     },
     {
       id: 3,
-      img: "../../../src/img/card3.jpg",
+      img: "./card3.jpg",
       heading: "Past Holder Package",
       para: "Valid through Feb 2023",
     },
     {
       id: 4,
-      img: "../../../src/img/card4.jpg",
+      img: "./card4.jpg",
       heading: "2023 Golf Tournament Package",
       para: "Valid through Jan 2021",
     },

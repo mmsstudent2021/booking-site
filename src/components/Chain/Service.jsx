@@ -21,19 +21,19 @@ const Service = () => {
   const serviceData = [
     {
       id: 1,
-      img: "../../../src/img/s1.jpg",
+      img: "./s1.jpg",
       heading6: "Royal Stay",
       heading4: "Booking Grad Palace Japan",
     },
     {
       id: 2,
-      img: "../../../src/img/s2.jpg",
+      img: "./s2.jpg",
       heading6: "Adventure Stay",
       heading4: "Gold & Spa Resort in New York",
     },
     {
       id: 3,
-      img: "../../../src/img/s3.jpg",
+      img: "./s3.jpg",
       heading6: "Honeymoon Sweets",
       heading4: "Maldives Sunshine Hotel",
     },

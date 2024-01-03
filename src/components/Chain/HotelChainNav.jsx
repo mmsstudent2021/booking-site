@@ -17,11 +17,11 @@ const HotelChainNav = () => {
         <a href="#">
           <img
             className="h-[30px] sm:h-[40px] md:h-[60px] dark:hidden"
-            src="../src/img/logo-hotel-light.svg"
+            src="./logo-hotel-light.svg"
           />
           <img
             className="h-[30px] sm:h-[40px] md:h-[60px] hidden dark:block"
-            src="../src/img/logo-hotel-dark.svg"
+            src="./logo-hotel-dark.svg"
           />
         </a>
 
@@ -89,40 +89,28 @@ const HotelChainNav = () => {
                         className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-beautifulBlue hover:bg-opacity-10 dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:text-beautifulBlue duration-300 focus:outline-none"
                         href="#"
                       >
-                        <img
-                          src="../../../src/img/uk.svg"
-                          className="w-5 h-5"
-                        />
+                        <img src="./uk.svg" className="w-5 h-5" />
                         English
                       </a>
                       <a
                         className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-beautifulBlue hover:bg-opacity-10 dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:text-beautifulBlue duration-300 focus:outline-none"
                         href="#"
                       >
-                        <img
-                          src="../../../src/img/sp.svg"
-                          className="w-5 h-5"
-                        />
+                        <img src="./sp.svg" className="w-5 h-5" />
                         Espanol
                       </a>
                       <a
                         className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-beautifulBlue hover:bg-opacity-10 dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text- hover:text-beautifulBlue duration-300 focus:outline-none"
                         href="#"
                       >
-                        <img
-                          src="../../../src/img/fr.svg"
-                          className="w-5 h-5"
-                        />
+                        <img src="./fr.svg" className="w-5 h-5" />
                         Francis
                       </a>
                       <a
                         className="flex items-center gap-2 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-beautifulBlue hover:bg-opacity-10 dark:text-grayPara font-medium dark:hover:bg-darkModeBlue2 dark:hover:bg-opacity-10 dark:hover:text-darkModeBlue hover:text-beautifulBlue duration-300 focus:outline-none"
                         href="#"
                       >
-                        <img
-                          src="../../../src/img/gr.svg"
-                          className="w-5 h-5"
-                        />
+                        <img src="./gr.svg" className="w-5 h-5" />
                         Deutsch
                       </a>
                     </div>
@@ -1043,7 +1031,7 @@ const HotelChainNav = () => {
                       </div>
                     </div>
                     {/* Fourth Group */}
-                    <div className="relative mt-[25px] bg-[url('../../../src/img/headerBg.jpg')] bg-cover bg-left md:h-[180px] rounded-xl overflow-hidden  lg:h-[97px]">
+                    <div className="relative mt-[25px] bg-[url('./headerBg.jpg')] bg-cover bg-left md:h-[180px] rounded-xl overflow-hidden  lg:h-[97px]">
                       <div className="absolute top-0 left-0 z-10 bg-headingColor bg-opacity-50 w-full h-full "></div>
                       <div className="relative z-20 w-full max-h-full p-5 flex lg:flex-row flex-col justify-center items-start gap-4 lg:justify-between lg:items-center">
                         <div className="text-white">

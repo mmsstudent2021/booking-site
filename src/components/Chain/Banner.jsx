@@ -14,7 +14,7 @@ const Banner = () => {
           <div className="hs-carousel-slide ">
             <div className="relative self-center text-4xl transition duration-700 h-full">
               <img
-                src="../../../src/img/chain1.jpg"
+                src="./chain1.jpg"
                 className="-z-20 w-full h-[400px] lg:h-[680px] object-left-top object-cover rounded-2xl"
               />
               <div className=" bg-black z-10 absolute left-0 top-0 w-full h-full opacity-30"></div>

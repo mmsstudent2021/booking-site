@@ -9,7 +9,7 @@ const Footer = () => {
             <a href="index.html">
               <img
                 className="text-white h-12 max-w-[130px]"
-                src="../../../src/img/logo-footer.svg"
+                src="./logo-footer.svg"
               />
             </a>
 
@@ -379,8 +379,18 @@ const Footer = () => {
               <ul className="mt-3 flex flex-shrink-0 gap-3">
                 <li>
                   <a href="#">
+                    <img src="./paypal.svg" className="max-w-full h-[30px]" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./visa.svg" className="max-w-full h-[30px]" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
                     <img
-                      src="../../../src/img/paypal.svg"
+                      src="./mastercard.svg"
                       className="max-w-full h-[30px]"
                     />
                   </a>
@@ -388,23 +398,7 @@ const Footer = () => {
                 <li>
                   <a href="#">
                     <img
-                      src="../../../src/img/visa.svg"
-                      className="max-w-full h-[30px]"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="../../../src/img/mastercard.svg"
-                      className="max-w-full h-[30px]"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img
-                      src="../../../src/img/expresscard.svg"
+                      src="./expresscard.svg"
                       className="max-w-full h-[30px]"
                     />
                   </a>
@@ -421,7 +415,7 @@ const Footer = () => {
                     href="#"
                     className="bg-facebookBtn hover:bg-opacity-85 duration-200 text-white px-[10px] aspect-square flex justify-center items-center rounded-md"
                   >
-                    <img src="../../../src/img/facebook-f.svg" />
+                    <img src="./facebook-f.svg" />
                   </a>
                 </li>
                 <li>
@@ -429,7 +423,7 @@ const Footer = () => {
                     href="#"
                     className="bg-instagramBtn hover:bg-opacity-85 duration-200 text-white px-[10px] aspect-square flex justify-center items-center rounded-md"
                   >
-                    <img src="../../../src/img/instagram.svg" />
+                    <img src="./instagram.svg" />
                   </a>
                 </li>
                 <li>
@@ -437,7 +431,7 @@ const Footer = () => {
                     href="#"
                     className="bg-twitterBtn hover:bg-opacity-85 duration-200 text-white px-[10px] aspect-square flex justify-center items-center rounded-md"
                   >
-                    <img src="../../../src/img/twitter.svg" />
+                    <img src="./twitter.svg" />
                   </a>
                 </li>
                 <li>
@@ -445,7 +439,7 @@ const Footer = () => {
                     href="#"
                     className="bg-linkedinBtn hover:bg-opacity-85 duration-200 text-white px-[10px] aspect-square flex justify-center items-center rounded-md"
                   >
-                    <img src="../../../src/img/linkedin-in.svg" />
+                    <img src="./linkedin-in.svg" />
                   </a>
                 </li>
               </ul>

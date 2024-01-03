@@ -28,35 +28,35 @@ const Gallery = () => {
   const images = [
     {
       id: 1,
-      img: "../../../src/img/g1.jpg",
+      img: "./g1.jpg",
     },
     {
       id: 2,
-      img: "../../../src/img/g1.5.jpg",
+      img: "./g1.5.jpg",
     },
     {
       id: 3,
-      img: "../../../src/img/g2.jpg",
+      img: "./g2.jpg",
     },
     {
       id: 4,
-      img: "../../../src/img/g3.jpg",
+      img: "./g3.jpg",
     },
     {
       id: 5,
-      img: "../../../src/img/g4.jpg",
+      img: "./g4.jpg",
     },
     {
       id: 6,
-      img: "../../../src/img/g5.jpg",
+      img: "./g5.jpg",
     },
     {
       id: 7,
-      img: "../../../src/img/g6.jpg",
+      img: "./g6.jpg",
     },
     {
       id: 8,
-      img: "../../../src/img/g7.jpg",
+      img: "./g7.jpg",
     },
   ];
 

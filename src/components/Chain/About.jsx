@@ -60,10 +60,7 @@ const About = () => {
           </div>
 
           <div className="col-span-12 md:col-span-6 lg:col-span-4 rounded-2xl relative">
-            <img
-              src="../../../../src/img/aboutImg.jpg"
-              className="rounded-2xl w-full h-full"
-            />
+            <img src="./aboutImg.jpg" className="rounded-2xl w-full h-full" />
             <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white bg-headingColor px-3 py-2 self-start text-base font-body font-bold tracking-[0.5px] border border-headingColor rounded-lg flex gap-2 items-center hover:bg-graysome hover:border-graysome duration-300">
               <span>
                 <svg
