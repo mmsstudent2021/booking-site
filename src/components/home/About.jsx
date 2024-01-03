@@ -8,8 +8,8 @@ import { FaStar, FaUtensils } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <section>
-      <div className="container py-8 md:py-12 overflow-hidden">
+    <section className="overflow-hidden">
+      <div className="container py-8 md:py-12">
         <div className="grid grid-cols-12 gap-y-10 lg:gap-y-0 lg:gap-x-10">
           <div className="col-span-12 lg:col-span-5 self-center">
             <div className="mb-10 relative z-10 mt-9 md:mr-40 lg:mr-10">
