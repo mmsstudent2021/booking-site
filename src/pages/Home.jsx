@@ -9,6 +9,8 @@ import Testimonials from "../components/home/Testimonials";
 import NearBy from "../components/home/NearBy";
 import Download from "../components/home/Download";
 import Footer from "../components/home/Footer";
+import ScrollToTopButton from "../components/home/ScrollToTopButtom";
+import MobileNavBar from "../components/home/MobileNavBar";
 
 const Home = () => {
   return (
@@ -23,6 +25,8 @@ const Home = () => {
       <NearBy />
       <Download />
       <Footer />
+      <ScrollToTopButton />
+      <MobileNavBar />
     </>
   );
 };
