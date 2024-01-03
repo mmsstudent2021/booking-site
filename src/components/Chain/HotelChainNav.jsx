@@ -9,7 +9,7 @@ const HotelChainNav = () => {
 
   return (
     <header>
-      <nav className="relative container mx-auto py-4 flex justify-between items-center">
+      <nav className="relative container mx-auto pt-4 lg:pb-2 pb-4 flex justify-between items-center">
         <a href="#">
           <img
             className="h-[30px] sm:h-[40px] md:h-[60px]"

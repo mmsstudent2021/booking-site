@@ -57,7 +57,9 @@ const Offer = () => {
   return (
     <div className="container mx-auto">
       <div className="pt-14 pb-12 flex flex-col gap-6 items-center">
-        <ye-h3> Special Offers </ye-h3>
+        <div className="mb-1">
+          <ye-h3> Special Offers </ye-h3>
+        </div>
 
         {/* Glide */}
         <div className="group glide overflow-x-hidden">
