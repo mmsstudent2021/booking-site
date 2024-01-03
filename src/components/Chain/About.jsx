@@ -1,4 +1,5 @@
 import React from "react";
+import Counter from "./Counter";
 
 const About = () => {
   return (
@@ -26,7 +27,7 @@ const About = () => {
                 className="text-beautifulBlue dark:text-darkModeBlue text-[36px] font-bold"
                 href="#"
               >
-                <span>10</span>
+                <Counter end={10} duration={1000} />
               </a>
               <div className="font-medium">
                 <ye-h6>Total Hotels</ye-h6>
@@ -37,7 +38,7 @@ const About = () => {
                 className="text-beautifulBlue dark:text-darkModeBlue text-[36px] font-bold"
                 href="#"
               >
-                <span>200</span>
+                <Counter end={200} duration={2000} />
                 <span>+</span>
               </a>
               <div className="font-medium">
@@ -49,7 +50,7 @@ const About = () => {
                 className="text-beautifulBlue dark:text-darkModeBlue text-[36px] font-bold"
                 href="#"
               >
-                <span>50</span>
+                <Counter end={50} duration={500} />
                 <span>+</span>
               </a>
               <div className="font-medium">
