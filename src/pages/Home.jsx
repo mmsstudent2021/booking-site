@@ -8,6 +8,7 @@ import Clients from "../components/home/Clients";
 import Testimonials from "../components/home/Testimonials";
 import NearBy from "../components/home/NearBy";
 import Download from "../components/home/Download";
+import Footer from "../components/home/Footer";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Testimonials />
       <NearBy />
       <Download />
+      <Footer />
     </>
   );
 };
