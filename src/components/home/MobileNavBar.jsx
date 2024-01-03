@@ -24,7 +24,7 @@ const MobileNavBar = () => {
             </a>
         </div>
     </section>
-    <div className="h-[64px] bg-black"></div>
+    <div className="h-[64px] bg-black md:hidden"></div>
     </>
   )
 }
