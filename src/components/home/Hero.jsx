@@ -18,7 +18,7 @@ const Hero = () => {
     });
   });
   return (
-    <section>
+    <section id="hero">
       <div className="container py-5 pb-12 md:py-12">
         <div className="grid grid-cols-12 gap-y-10 mx-auto md:w-3/4 lg:w-auto lg:gap-y-0 lg:gap-x-20">
           <div className="col-span-12 lg:col-span-6">
