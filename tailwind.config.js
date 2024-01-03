@@ -5,7 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/preline/dist/*.js",
   ],
+  darkMode: 'class',
+
   theme: {
+    
     fontFamily: {
       body: ["DM Sans", "sans-serif"],
       heading: ["Poppins", "sans-serif"],
@@ -41,7 +44,7 @@ export default {
           800: "#201b57",
           900: "#100d2b",
         },
-        yellow: {
+         yellow: {
           100: "#fdf3d5",
           200: "#fce7ab",
           300: "#fadb82",
@@ -73,6 +76,28 @@ export default {
           700: "#0e616e",
           800: "#09414a",
           900: "#052025"
+},
+// black: {
+//           100: "#d1d1d2",
+//           200: "#a3a4a5",
+//           300: "#757677",
+//           400: "",
+//           500: "",
+//           600: "#141617",
+//           700: "#0f1011",
+//           800: "#0a0b0c",
+//           900: "#050506"
+// },
+black: {
+          100: "#d5d6d7",
+          200: "#aaacae",
+          300: "#808386",
+          400: "#191b1d",
+          500: "#222529",
+          600: "#22262a",
+          700: "#1a1d20",
+          800: "#111315",
+          900: "#090a0b"
 },
       },
     },

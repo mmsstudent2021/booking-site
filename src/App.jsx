@@ -1,10 +1,12 @@
 import React from "react";
-import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import OurTeam from "./pages/Ourteam";
 
 const App = () => {
   return (
     <div>
-      <Home />
+      <Contact/>
+      {/* <OurTeam/> */}
     </div>
   );
 };
