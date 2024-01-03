@@ -23,6 +23,7 @@ export default {
       colors: {
         bgColor: "#FFF",
         someGray: "#F5F5F6",
+        graysome: "#302f36",
         headingColor: "#0b0a12",
         bodyColor: "#747579",
         footerParaColor: "#c5c5c7",

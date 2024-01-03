@@ -44,6 +44,7 @@ const Offer = () => {
         },
       },
       autoplay: 3000,
+      gap: 30,
     });
 
     glide.mount();
@@ -55,24 +56,61 @@ const Offer = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="pt-16 flex flex-col gap-6 items-center">
-        <h3 className="font-heading text-[27px] font-bold"> Special Offers </h3>
+      <div className="pt-14 pb-12 flex flex-col gap-6 items-center">
+        <ye-h3> Special Offers </ye-h3>
 
-        {/* <div className="container flex justify-center gap-6">
-          {cards.map((card) => (
-            <OfferCard key={card.id} card={card} />
-          ))}
-        </div> */}
-
-        <div className="glide">
-          <div className="glide__track" data-glide-el="track">
-            <ul className="glide__slides">
+        {/* Glide */}
+        <div className="group glide overflow-x-hidden">
+          <div className="glide__track overflow-x-hidden" data-glide-el="track">
+            <ul className="glide__slides overflow-x-hidden">
               {cards.map((card) => (
-                <li key={card.id} className="glide__slide">
+                <li key={card.id} className="glide__slide overflow-x-hidden">
                   <OfferCard card={card} />
                 </li>
               ))}
             </ul>
+          </div>
+
+          {/* Controls */}
+          <div className="glide__arrows" data-glide-el="controls">
+            <button
+              className="glide__arrow glide__arrow--left border-none rounded-full bg-black bg-opacity-40 p-4 opacity-0 group-hover:opacity-100 duration-500 backdrop-blur-[5px]"
+              data-glide-dir="<"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </button>
+            <button
+              className="glide__arrow glide__arrow--right bg-black bg-opacity-40 p-4 border-none rounded-full opacity-0 group-hover:opacity-100 duration-500 backdrop-blur-[5px]"
+              data-glide-dir=">"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>

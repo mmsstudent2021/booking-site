@@ -66,13 +66,17 @@ const Nearby = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-[128px]">
-      <h2 className="text-center mb-[25px]">Explore Nearby</h2>
+    <div className="container mx-auto">
+      <div className="pt-14 lg:pt-12">
+        <div className="text-center mb-[25px]">
+          <ye-h2>Explore Nearby</ye-h2>
+        </div>
 
-      <div className="grid grid-cols-12">
-        {nearByCardData.map((card) => (
-          <NearbyCard key={card.id} card={card} />
-        ))}
+        <div className="grid grid-cols-12 gap-8 md:gap-12 lg:gap-14">
+          {nearByCardData.map((card) => (
+            <NearbyCard key={card.id} card={card} />
+          ))}
+        </div>
       </div>
     </div>
   );

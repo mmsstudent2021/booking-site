@@ -7,11 +7,20 @@ const ServiceCard = ({ service: { id, img, heading6, heading4 } }) => {
         <img src={img} className="rounded-2xl w-full max-h-full" />
       </div>
       <div className="col-span-12 md:col-span-6">
-        <div>
-          <h6 className="mb-4">{heading6}</h6>
-          <h4 className="mb-4 text-[28px] leading-9 hover:text-beautifulBlue duration-300 font-heading font-bold">
-            <a href="#">{heading4}</a>
-          </h4>
+        <div className="group">
+          <div className="mb-4">
+            <ye-h6>{heading6}</ye-h6>
+          </div>
+          <div className="mb-4">
+            <ye-h4>
+              <a
+                href="#"
+                className="group-hover:text-beautifulBlue duration-500"
+              >
+                {heading4}
+              </a>
+            </ye-h4>
+          </div>
           <a
             className="mb-[6px] text-beautifulBlue font-medium tracking-wide flex gap-1 items-center"
             href="#"

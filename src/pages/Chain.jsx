@@ -11,7 +11,7 @@ import Footer from "../components/Chain/Footer";
 
 const Chain = () => {
   return (
-    <div>
+    <div className="text-bodyColor leading-6">
       <HotelChainNav />
       <Banner />
       <Offer />
