@@ -6,6 +6,7 @@ import About from "../components/home/About";
 import Feature from "../components/home/Feature";
 import Clients from "../components/home/Clients";
 import Testimonials from "../components/home/Testimonials";
+import NearBy from "../components/home/NearBy";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Feature />
       <Clients />
       <Testimonials />
+      <NearBy />
     </>
   );
 };
