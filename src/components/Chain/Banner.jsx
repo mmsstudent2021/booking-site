@@ -26,7 +26,7 @@ const Banner = () => {
                 <ye-h1 className="text-white">Modern Luxury In Manhattan</ye-h1>
                 <a
                   href="#"
-                  className="text-white bg-beautifulBlue hover:bg-hoverBgBeautifulBlue px-3 py-2 self-start text-base font-body font-bold tracking-[0.5px] border border-beautifulBlue hover:border-hoverBorderBeautifulBlue rounded-lg"
+                  className="text-white bg-beautifulBlue hover:bg-hoverBgBeautifulBlue px-3 py-2 self-start text-base font-body font-bold tracking-[0.5px] border border-beautifulBlue hover:border-hoverBorderBeautifulBlue dark:bg-darkModeBlue dark:hover:bg-hoverDarkModeBlue dark:border-darkModeBlue dark:hover:border-hoverDarkModeBlue rounded-lg"
                 >
                   Reserve Today
                 </a>
@@ -50,7 +50,7 @@ const Banner = () => {
                   </div>
                   <a
                     href="#"
-                    className="text-white self-center bg-headingColor hover:opacity-85 px-4 py-2 text-base font-body font-bold tracking-[0.5px] border border-headingColor rounded-lg"
+                    className="text-white self-center bg-headingColor hover:opacity-85 px-4 py-2 text-base font-body font-bold tracking-[0.5px] border border-headingColor hover:bg-graysome hover:border-graysome duration-500 rounded-lg"
                   >
                     Take Me There
                   </a>

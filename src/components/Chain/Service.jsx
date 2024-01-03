@@ -48,24 +48,24 @@ const Service = () => {
               <div className="mb-2">
                 <ye-h2>We Provide Our Best Facilities For You</ye-h2>
               </div>
-              <p className="text-bodyColor mb-4">
+              <p className="text-bodyColor dark:text-grayPara mb-4">
                 Book your hotel with us and don't forget to grab an awesome
                 hotel deal to save massive on your stay.
               </p>
               <a
                 href="#"
-                className="bg-headingColor hover:bg-graysome hover:border-graysome duration-300 text-white px-4 py-2 rounded-md tracking-wider font-bold"
+                className="bg-headingColor block w-fit text-base hover:bg-graysome hover:border-graysome duration-300 text-white px-4 py-2 rounded-lg tracking-wider font-bold"
               >
                 Contact Us
               </a>
             </div>
             <div className="col-span-12 mb-2 md:mb-0 md:col-span-6">
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 font-medium">
                 <li>
                   <ye-h6>
                     <div className="flex gap-3 items-center">
                       <svg
-                        className="w-6 text-beautifulBlue fill-beautifulBlue"
+                        className="w-6 text-beautifulBlue dark:text-darkModeBlue fill-beautifulBlue dark:fill-darkModeBlue"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 256 256"
                       >
@@ -107,7 +107,7 @@ const Service = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         height={16}
                         viewBox="0 0 576 512"
-                        className="fill-beautifulBlue w-6"
+                        className="fill-beautifulBlue dark:fill-darkModeBlue w-6"
                       >
                         <path
                           opacity={1}
@@ -122,7 +122,7 @@ const Service = () => {
                   <ye-h6>
                     <div className="flex gap-3 items-center">
                       <svg
-                        className="fill-beautifulBlue w-6"
+                        className="fill-beautifulBlue dark:fill-darkModeBlue w-6"
                         xmlns="http://www.w3.org/2000/svg"
                         height={16}
                         viewBox="0 0 512 512"
@@ -140,7 +140,7 @@ const Service = () => {
                   <ye-h6>
                     <div className="flex gap-3 items center">
                       <svg
-                        className="fill-beautifulBlue w-6"
+                        className="fill-beautifulBlue dark:fill-darkModeBlue w-6"
                         xmlns="http://www.w3.org/2000/svg"
                         height={16}
                         width={14}
@@ -159,12 +159,12 @@ const Service = () => {
               </ul>
             </div>
             <div className="col-span-12 md:col-span-6">
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 font-medium">
                 <li>
                   <ye-h6>
                     <div className="flex gap-3 items-center">
                       <svg
-                        className="fill-beautifulBlue w-6"
+                        className="fill-beautifulBlue dark:fill-darkModeBlue w-6"
                         xmlns="http://www.w3.org/2000/svg"
                         height={16}
                         width={14}
@@ -186,7 +186,7 @@ const Service = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         height={16}
                         viewBox="0 0 640 512"
-                        className="w-6 fill-beautifulBlue"
+                        className="w-6 fill-beautifulBlue dark:fill-darkModeBlue"
                       >
                         <path
                           opacity={1}
@@ -201,7 +201,7 @@ const Service = () => {
                   <ye-h6>
                     <div className="flex gap-3 items-center">
                       <svg
-                        className="fill-beautifulBlue w-6"
+                        className="fill-beautifulBlue w-6 dark:fill-darkModeBlue"
                         xmlns="http://www.w3.org/2000/svg"
                         height={16}
                         width={18}
@@ -220,7 +220,7 @@ const Service = () => {
                   <ye-h6>
                     <div className="flex gap-3 items-center">
                       <svg
-                        className="fill-beautifulBlue w-6"
+                        className="fill-beautifulBlue w-6 dark:fill-darkModeBlue"
                         xmlns="http://www.w3.org/2000/svg"
                         height={16}
                         width={14}

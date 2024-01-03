@@ -6,9 +6,11 @@ const Action = () => {
       <div className="lg:p-12">
         <div className="bg-[url('../../../src/img/action.jpg')] bg-cover flex justify-center md:justify-end items-center rounded-2xl p-4 md:p-7 lg:p-10">
           {/* Card */}
-          <div className="p-5 md:p-7 lg:p-12 rounded-2xl bg-white max-w-[400px]">
+          <div className="p-5 md:p-7 lg:p-12 rounded-2xl bg-white dark:bg-cardDarkModeColor max-w-[400px]">
             <div className="flex flex-col md:flex-row md:items-center items-start justify-between mb-2">
-              <h6 className="text-beautifulBlue font-bold">Exclusive Offer</h6>
+              <h6 className="text-beautifulBlue dark:text-darkModeBlue font-bold">
+                Exclusive Offer
+              </h6>
               <ul className="flex">
                 <li>
                   <svg
@@ -92,22 +94,32 @@ const Action = () => {
                 </li>
               </ul>
             </div>
-            <h5 className="mb-2 leading-7">
-              Enjoy Your Dream Vacation In Switzerland
-            </h5>
-            <p className="text-bodyColor leading-6 mb-4">
+            <div className="mb-2 text-headingColor dark:text-white">
+              <ye-h5>Enjoy Your Dream Vacation In Switzerland</ye-h5>
+            </div>
+            <p className="text-bodyColor leading-6 mb-4 dark:text-dropDownTextDarkModeColor">
               Book your hotel with us and don't forget to grab an awesome hotel
               deal to save massive on your stay.
             </p>
-            <h6 className="mb-1">2 Days / 3 Nights</h6>
+            <ye-h6>
+              <div className="mb-1 dark:text-white font-medium">
+                2 Days / 3 Nights
+              </div>
+            </ye-h6>
             <div className="flex gap-1 items-center mb-4">
-              <h5 className="text-success">$750</h5>
-              <span className="text-bodyColor">/day</span>
-              <span className="text-bodyColor line-through">$1000</span>
+              <ye-h5>
+                <div className="text-success">$750</div>
+              </ye-h5>
+              <span className="text-bodyColor dark:text-dropDownTextDarkModeColor">
+                /day
+              </span>
+              <span className="text-bodyColor line-through dark:text-dropDownTextDarkModeColor">
+                $1000
+              </span>
             </div>
             <a
               href="#"
-              className="px-4 py-2 rounded-lg w-full block text-center bg-beautifulBlue bg-opacity-10 hover:bg-beautifulBlue hover:text-white duration-500 text-beautifulBlue tracking-wide font-bold"
+              className="px-4 py-2 rounded-lg w-full block text-center bg-beautifulBlue bg-opacity-10 hover:bg-beautifulBlue hover:text-white duration-500 text-beautifulBlue tracking-wide font-bold dark:bg-darkModeBlue dark:bg-opacity-10 dark:text-darkModeBlue2 dark:hover:bg-darkModeBlue"
             >
               Book Now
             </a>

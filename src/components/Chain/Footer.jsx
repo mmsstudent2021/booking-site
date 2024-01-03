@@ -66,26 +66,39 @@ const Footer = () => {
 
           <div className="xl:col-span-9 col-span-12 xl:pl-[100px] flex flex-wrap gap-y-5">
             <div className="md:w-1/4 w-1/2">
-              <h5 className="text-white mb-[25.6px]">Page</h5>
-
+              <div className="text-white mb-[25.6px]">
+                <ye-h5>Page</ye-h5>
+              </div>
               <ul className="flex flex-col gap-2 text-footerParaColor">
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     About us
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Contact us
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     News and Blog
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Meet a Team
                   </a>
                 </li>
@@ -93,36 +106,55 @@ const Footer = () => {
             </div>
 
             <div className="md:w-1/4 w-1/2">
-              <h5 className="text-white mb-[25.6px]">Link</h5>
-
+              <div className="text-white mb-[25.6px]">
+                <ye-h5>Link</ye-h5>
+              </div>
               <ul className="flex flex-col gap-2 text-footerParaColor">
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Sign up
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Sign in
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Terms
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Cookies
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Support
                   </a>
                 </li>
@@ -130,31 +162,47 @@ const Footer = () => {
             </div>
 
             <div className="md:w-1/4 w-1/2">
-              <h5 className="text-white mb-[25.6px]">Global Site</h5>
-
+              <div className="text-white mb-[25.6px]">
+                <ye-h5>Global Site</ye-h5>
+              </div>
               <ul className="flex flex-col gap-2 text-footerParaColor">
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     India
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     California
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Indonesia
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Canada
                   </a>
                 </li>
                 <li>
-                  <a className="hover:text-beautifulBlue duration-200" href="#">
+                  <a
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+                    href="#"
+                  >
                     Malaysia
                   </a>
                 </li>
@@ -162,12 +210,13 @@ const Footer = () => {
             </div>
 
             <div className="md:w-1/4 w-1/2">
-              <h5 className="text-white mb-[25.6px]">Booking</h5>
-
+              <div className="text-white mb-[25.6px]">
+                <ye-h5>Booking</ye-h5>
+              </div>
               <ul className="flex flex-col gap-2 text-footerParaColor">
                 <li>
                   <a
-                    className="hover:text-beautifulBlue duration-200 flex gap-2 items-center"
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 flex gap-2 items-center"
                     href="#"
                   >
                     <svg
@@ -187,7 +236,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-beautifulBlue duration-200 flex gap-2 items-center"
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 flex gap-2 items-center"
                     href="#"
                   >
                     <svg
@@ -207,7 +256,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-beautifulBlue duration-200 flex gap-2 items-center"
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 flex gap-2 items-center"
                     href="#"
                   >
                     <svg
@@ -227,7 +276,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="hover:text-beautifulBlue duration-200 flex items-center gap-2"
+                    className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 flex items-center gap-2"
                     href="#"
                   >
                     <svg
@@ -251,70 +300,71 @@ const Footer = () => {
         </div>
 
         <div className="mt-12">
-          <h5 className="text-white mb-2">Top Links</h5>
-
+          <div className="text-white mb-[25.6px]">
+            <ye-h5>Top Links</ye-h5>
+          </div>
           <ul className="text-footerParaColor flex leading-8 flex-wrap flex-shrink-0">
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Flights</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Hotels</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Tours</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">About</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Contact us</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Blogs</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Services</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Detail Page</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Services</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Policy</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Testimonials</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Newsletters</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Podcasts</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Protests</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Flights</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">NewsCyber</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Education</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Sports</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Tech and Auto</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Opinion</a>
             </li>
-            <li className="hover:text-beautifulBlue duration-200 mr-3">
+            <li className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200 mr-3">
               <a href="#">Share Market</a>
             </li>
           </ul>
@@ -323,7 +373,9 @@ const Footer = () => {
         <div className="mt-12">
           <div className="flex flex-col md:flex-row justify-between md:items-center">
             <div className="mt-3">
-              <h5 className="text-white mb-2">Payment & Security</h5>
+              <div className="text-white mb-[25.6px]">
+                <ye-h5>Payment & Security</ye-h5>
+              </div>{" "}
               <ul className="mt-3 flex flex-shrink-0 gap-3">
                 <li>
                   <a href="#">
@@ -360,7 +412,9 @@ const Footer = () => {
               </ul>
             </div>
             <div className="mt-[25px]">
-              <h5 className="text-white">Follow us on</h5>
+              <div className="text-white mb-[25.6px]">
+                <ye-h5>Follow us on</ye-h5>
+              </div>{" "}
               <ul className="mt-3 flex flex-shrink-0 gap-3">
                 <li>
                   <a
@@ -404,19 +458,31 @@ const Footer = () => {
         <div className="py-5 flex flex-col items-center justify-center gap-3 xl:gap-4 xl:flex-row xl:justify-between">
           <div className="text-footerParaColor">
             Copyrights ©2023 Booking. Build by
-            <a href="#" className="hover:text-beautifulBlue duration-200">
+            <a
+              href="#"
+              className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+            >
               {" "}
               Webestica
             </a>
           </div>
           <div className="flex flex-wrap justify-center gap-x-7 gap-y-3 xl:gap-7 text-footerParaColor">
-            <a href="#" className="hover:text-beautifulBlue duration-200">
+            <a
+              href="#"
+              className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+            >
               Privacy policy
             </a>
-            <a href="#" className="hover:text-beautifulBlue duration-200">
+            <a
+              href="#"
+              className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+            >
               Terms and conditions
             </a>
-            <a href="#" className="hover:text-beautifulBlue duration-200">
+            <a
+              href="#"
+              className="hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200"
+            >
               Refund policy
             </a>
           </div>

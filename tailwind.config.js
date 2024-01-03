@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -9,6 +10,7 @@ export default {
     fontFamily: {
       body: ["DM Sans", "sans-serif"],
       heading: ["Poppins", "sans-serif"],
+      sans: ["DM Sans", "sans-serif"],
     },
     container: {
       center: true,
@@ -22,13 +24,22 @@ export default {
       },
       colors: {
         bgColor: "#FFF",
+        bgDarkModeColor: "#222529",
+        cardDarkModeColor: "#191B1D",
+        serviceCardDarkModeColor: "#2A2C31",
+        dropDownTextDarkModeColor: "#b0b0b8",
         someGray: "#F5F5F6",
         graysome: "#302f36",
+        grayPara: "#c5c6cc",
         headingColor: "#0b0a12",
         bodyColor: "#747579",
         footerParaColor: "#c5c5c7",
         beautifulBlue: "#5143d9",
         hoverBgBeautifulBlue: "#4539b8",
+        darkModeBlue: "#9085E6",
+        darkModeBlue2: "#8e85e6",
+        darkModeBlue3: "#2D2F3D",
+        hoverDarkModeBlue: "#7A6DEB",
         hoverBorderBeautifulBlue: "#4136ae",
         success: "#0CBC87",
         danger: "#D6293E",

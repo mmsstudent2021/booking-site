@@ -2,27 +2,27 @@ import React from "react";
 
 const ServiceCard = ({ service: { id, img, heading6, heading4 } }) => {
   return (
-    <div className="grid grid-cols-12 justify-center gap-6 items-center bg-someGray rounded-2xl px-7 py-6">
+    <div className="grid grid-cols-12 justify-center gap-6 items-center bg-someGray dark:bg-serviceCardDarkModeColor rounded-2xl px-7 py-6">
       <div className="col-span-12 md:col-span-6">
         <img src={img} className="rounded-2xl w-full max-h-full" />
       </div>
       <div className="col-span-12 md:col-span-6">
         <div className="group">
-          <div className="mb-4">
+          <div className="mb-4 font-medium">
             <ye-h6>{heading6}</ye-h6>
           </div>
           <div className="mb-4">
             <ye-h4>
               <a
                 href="#"
-                className="group-hover:text-beautifulBlue duration-500"
+                className="group-hover:text-beautifulBlue dark:group-hover:text-darkModeBlue duration-500"
               >
                 {heading4}
               </a>
             </ye-h4>
           </div>
           <a
-            className="mb-[6px] text-beautifulBlue font-medium tracking-wide flex gap-1 items-center"
+            className="mb-[6px] text-beautifulBlue dark:text-darkModeBlue font-medium tracking-wide flex gap-1 items-center"
             href="#"
           >
             Explore Now

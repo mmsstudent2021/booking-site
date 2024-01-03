@@ -5,11 +5,13 @@ const About = () => {
     <div className="container mx-auto">
       <div className="py-0 lg:py-16">
         <div className="mb-4">
-          <ye-h2>
-            We always provide the best for our hotel visitors. We are happy to
-            help you.
-          </ye-h2>
-          <p className="text-bodyColor">
+          <div className="mb-2">
+            <ye-h2>
+              We always provide the best for our hotel visitors. We are happy to
+              help you.
+            </ye-h2>
+          </div>
+          <p className="text-bodyColor dark:text-grayPara">
             We focus a great deal on the understanding of behavioral psychology
             and influence triggers which are crucial for becoming a well-rounded
             Digital Marketer. We understand that theory is important to build a
@@ -18,26 +20,41 @@ const About = () => {
           </p>
         </div>
         <div className="grid grid-cols-12 gap-7">
-          <div className="col-span-12 md:col-span-12 lg:col-span-4 rounded-2xl flex flex-col gap-[1.6rem] p-[26px] bg-beautifulBlue bg-opacity-10">
+          <div className="col-span-12 md:col-span-12 lg:col-span-4 rounded-2xl flex flex-col gap-[3rem] justify-center p-[26px] bg-beautifulBlue bg-opacity-10 dark:bg-darkModeBlue3">
             <div className="font-heading flex justify-between items-center">
-              <a className="text-beautifulBlue text-[36px] font-bold" href="#">
+              <a
+                className="text-beautifulBlue dark:text-darkModeBlue text-[36px] font-bold"
+                href="#"
+              >
                 <span>10</span>
               </a>
-              <p className="font-medium font-heading">Total Hotels</p>
+              <div className="font-medium">
+                <ye-h6>Total Hotels</ye-h6>
+              </div>
             </div>
             <div className="font-heading flex justify-between items-center">
-              <a className="text-beautifulBlue text-[36px] font-bold" href="#">
+              <a
+                className="text-beautifulBlue dark:text-darkModeBlue text-[36px] font-bold"
+                href="#"
+              >
                 <span>200</span>
                 <span>+</span>
               </a>
-              <p className="font-medium font-heading">Total Staff</p>
+              <div className="font-medium">
+                <ye-h6>Total Staff</ye-h6>
+              </div>
             </div>
             <div className="font-heading flex justify-between items-center">
-              <a className="text-beautifulBlue text-[36px] font-bold" href="#">
+              <a
+                className="text-beautifulBlue dark:text-darkModeBlue text-[36px] font-bold"
+                href="#"
+              >
                 <span>50</span>
                 <span>+</span>
               </a>
-              <p className="font-medium font-heading">Amazing Services</p>
+              <div className="font-medium">
+                <ye-h6>Amazing Services</ye-h6>
+              </div>
             </div>
           </div>
 
@@ -142,8 +159,9 @@ const About = () => {
                     />
                   </svg>
                 </span>
-
-                <h6>Best Rate Guaranteed</h6>
+                <div className="font-medium">
+                  <ye-h6>Best Rate Guaranteed</ye-h6>
+                </div>
               </li>
               <li className="py-4 flex items-center gap-3">
                 <span>
@@ -200,7 +218,9 @@ const About = () => {
                     />
                   </svg>
                 </span>
-                <h6>Payment at Hotel</h6>
+                <div className="font-medium">
+                  <ye-h6>Payment at Hotel</ye-h6>
+                </div>
               </li>
               <li className="py-4 flex items-center gap-3">
                 <span>
@@ -232,7 +252,9 @@ const About = () => {
                     />
                   </svg>
                 </span>
-                <h6>Exclusive Members Rewards</h6>
+                <div className="font-medium">
+                  <ye-h6>Exclusive Members Rewards</ye-h6>
+                </div>
               </li>
               <li className="py-4 flex items-center gap-3">
                 <span>
@@ -269,7 +291,9 @@ const About = () => {
                     />
                   </svg>
                 </span>
-                <h6>WIFI Access</h6>
+                <div className="font-medium">
+                  <ye-h6>WIFI Access</ye-h6>
+                </div>
               </li>
               <li className="py-4 flex items-center gap-3">
                 <span>
@@ -290,7 +314,9 @@ const About = () => {
                     <circle cx={84} cy={84} r={16} />
                   </svg>
                 </span>
-                <h6>No Hidden Changes</h6>
+                <div className="font-medium">
+                  <ye-h6>No Hidden Changes</ye-h6>
+                </div>
               </li>
             </ul>
           </div>
