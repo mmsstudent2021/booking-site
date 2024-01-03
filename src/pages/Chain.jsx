@@ -8,6 +8,7 @@ import Service from "../components/Chain/Service";
 import Action from "../components/Chain/Action";
 import Gallery from "../components/Chain/Gallery";
 import Footer from "../components/Chain/Footer";
+import ScrollToTopButtom from "../components/Chain/ScrollToTopButtom";
 
 const Chain = () => {
   return (
@@ -21,6 +22,7 @@ const Chain = () => {
       <Action />
       <Gallery />
       <Footer />
+      <ScrollToTopButtom />
     </div>
   );
 };

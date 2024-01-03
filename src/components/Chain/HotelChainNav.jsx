@@ -285,7 +285,12 @@ const HotelChainNav = () => {
                 <ul className="absolute left-0 top-[90%] z-10 bg-white dark:bg-bgDarkModeColor rounded-md w-full">
                   <li className="group text-bodyColor dark:text-grayPara cursor-pointer">
                     <div className="p-4 flex justify-between lg:justify-start lg:gap-[6px] items-center hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200">
-                      <a href="#">Find a hotel</a>
+                      <a
+                        className="text-headingColor dark:text-grayPara"
+                        href="#"
+                      >
+                        Find a hotel
+                      </a>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -657,7 +662,12 @@ const HotelChainNav = () => {
                   <hr className="dark:opacity-10" />
                   <li className="group text-bodyColor dark:text-grayPara cursor-pointer">
                     <div className="p-4 flex justify-between lg:justify-start lg:gap-[6px] items-center hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200">
-                      <a href="#">Hotel Facilities</a>
+                      <a
+                        className="text-headingColor dark:text-grayPara"
+                        href="#"
+                      >
+                        Hotel Facilities
+                      </a>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -720,7 +730,7 @@ const HotelChainNav = () => {
                   </li>
                 </ul>
               )}
-              <ul className="hidden absolute left-0 top-[90%] z-10 bg-white dark:bg-bgDarkModeColor dark:text-grayPara rounded-md w-full lg:w-fit text-base lg:static lg:flex ">
+              <ul className="hidden absolute left-0 top-[90%] z-10 bg-white dark:bg-bgDarkModeColor text-headingColor dark:text-grayPara rounded-md w-full lg:w-fit text-base lg:static lg:flex ">
                 <li className="group cursor-pointer">
                   <div className="p-4 flex justify-between lg:justify-start lg:gap-[6px] items-center hover:text-beautifulBlue dark:hover:text-darkModeBlue duration-200">
                     <a href="#">Find a hotel</a>
@@ -1212,7 +1222,7 @@ const HotelChainNav = () => {
                         <input
                           type="text"
                           placeholder="Select date"
-                          className="bg-someGray py-3 px-4 rounded-md dark:bg-bgDarkModeColor"
+                          className="outline-none bg-someGray py-3 px-4 rounded-md dark:bg-bgDarkModeColor"
                         />
                       </div>
                       <div className="flex flex-col max-w-[150px]">
@@ -1225,7 +1235,7 @@ const HotelChainNav = () => {
                         <input
                           type="text"
                           placeholder="Select date"
-                          className="bg-someGray py-3 px-4 rounded-md dark:bg-bgDarkModeColor"
+                          className="outline-none bg-someGray py-3 px-4 rounded-md dark:bg-bgDarkModeColor"
                         />
                       </div>
                     </div>
@@ -1239,7 +1249,7 @@ const HotelChainNav = () => {
                       </label>
                       <input
                         type="text"
-                        className="bg-someGray py-3 px-4 rounded-md dark:bg-bgDarkModeColor dark:text-white"
+                        className="outline-none bg-someGray py-3 px-4 rounded-md dark:bg-bgDarkModeColor dark:text-white"
                         placeholder="2 Guests 1 Room"
                       />
                     </div>

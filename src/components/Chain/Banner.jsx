@@ -37,7 +37,7 @@ const Banner = () => {
             <div className="relative w-full text-4xl transition duration-700">
               <iframe
                 className="w-full h-[400px] lg:h-[680px] rounded-2xl bg-center "
-                src="https://www.youtube.com/embed/j56YlCXuPFU?si=ZCsbRdHl4KRi0-2h&autoplay=1&mute=1"
+                src="https://www.youtube.com/embed/j56YlCXuPFU?si=ZCsbRdHl4KRi0-2h&autoplay=1&loop=1&mute=1&playlist=j56YlCXuPFU"
                 title="Looping Video"
                 border={0}
                 allowFullScreen
