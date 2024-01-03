@@ -1,11 +1,12 @@
 import React from "react";
+import Contact from "./pages/Contact";
+import OurTeam from "./pages/Ourteam";
 
 const App = () => {
   return (
-    <div className="container">
-      <h1 className="text-3xl text-beautifulBlue font-heading font-bold">
-        Test
-      </h1>
+    <div>
+      <Contact/>
+      {/* <OurTeam/> */}
     </div>
   );
 };
