@@ -72,7 +72,7 @@ const Nearby = () => {
           <ye-h2>Explore Nearby</ye-h2>
         </div>
 
-        <div className="grid grid-cols-12 gap-8 md:gap-12 lg:gap-14">
+        <div className="grid grid-cols-12 gap-8 justify-center md:gap-12 lg:gap-14">
           {nearByCardData.map((card) => (
             <NearbyCard key={card.id} card={card} />
           ))}
