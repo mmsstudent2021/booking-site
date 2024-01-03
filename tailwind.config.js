@@ -6,6 +6,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/preline/dist/*.js",
   ],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       body: ["DM Sans", "sans-serif"],
@@ -19,7 +20,7 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
+      fontSize: {
         "6xl": "4rem",
       },
       colors: {
@@ -34,6 +35,9 @@ export default {
         headingColor: "#0b0a12",
         bodyColor: "#747579",
         footerParaColor: "#c5c5c7",
+
+        "body-dark": "#222529",
+        dark: "#191b1d",
         beautifulBlue: "#5143d9",
         hoverBgBeautifulBlue: "#4539b8",
         darkModeBlue: "#9085E6",
@@ -51,6 +55,8 @@ export default {
         linkedinBtn: "#238cc8",
         hrColor: "#85878a",
         blue: {
+        blue: {
+          50: "#edecfb",
           100: "#dcd9f7",
           200: "#b9b4f0",
           300: "#978ee8",
@@ -98,7 +104,7 @@ export default {
     },
   },
   plugins: [
-    require("preline/plugin"),
+    require("preline/plugin"), 
     function ({ addComponents }) {
       addComponents({
         ".container": {
