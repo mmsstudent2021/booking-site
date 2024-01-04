@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "../../../node_modules/@glidejs/glide/dist/glide";
 import BestDealGlideSlide from "./BestDealGlideSlide";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
+import Glide from "@glidejs/glide";
 
 const BestDeal = () => {
   useEffect(() => {

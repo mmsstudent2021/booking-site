@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../../../node_modules/@glidejs/glide/dist/glide";
+import Glide from "@glidejs/glide";
 import TestimonialSlide from "./TestimonialSlide";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 const Testimonials = () => {
