@@ -14,6 +14,7 @@ import MoreLinkDropdown from "./MoreLinkDropdown";
 import NotificationDropdown from "./NotificationDropdown";
 import ProfileDropdown from "./ProfileDropdown";
 import "../../../node_modules/waypoints/lib/noframework.waypoints";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [fixedNavbar, setFixedNavbar] = useState(false);
@@ -98,12 +99,12 @@ const Header = () => {
                           <FaEllipsis />
                         </button>
                         <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] xl:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 xl:w-64 hidden z-10 xl:mt-2 bg-white xl:shadow-md rounded-lg p-2 dark:bg-dark dark:divide-gray-700 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 top-0 left-full">
-                          <a className="nav-link sub-nav-link" href="#">
+                          <NavLink className="nav-link sub-nav-link" to="/">
                             Hotel Home
-                          </a>
-                          <a className="nav-link sub-nav-link" href="#">
+                          </NavLink>
+                          <NavLink className="nav-link sub-nav-link" to="/hotel-chain">
                             Hotel Chain
-                          </a>
+                          </NavLink>
                           <a className="nav-link sub-nav-link" href="#">
                             Hotel Resort
                           </a>
@@ -278,9 +279,9 @@ const Header = () => {
                       <a className="nav-link sub-nav-link" href="#">
                         About
                       </a>
-                      <a className="nav-link sub-nav-link" href="#">
+                      <NavLink className="nav-link sub-nav-link" to="/contact">
                         Contact
-                      </a>
+                      </NavLink>
                       <a className="nav-link sub-nav-link" href="#">
                         Contact 2
                       </a>
