@@ -1,286 +1,291 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaHotel } from "react-icons/fa6";
-import { MdFlight } from "react-icons/md";
-import { FaEarthAmericas } from "react-icons/fa6";
-import { FaCar } from "react-icons/fa6";
-
+import { BsEnvelope, BsTelephone } from "react-icons/bs";
+import {
+  FaCar,
+  FaEarthAmericas,
+  FaFacebookF,
+  FaHotel,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPlane,
+  FaTwitter,
+} from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <section className="bg-headingColor text-white pt-5">
-      <div className="container">
-        <div className="flex flex-col gap-10 py-8">
-          <div className="flex item-start justify-between gap-9">
-            <div>
+    <footer className="bg-[#000]">
+      <div className="container py-12 pb-5 text-gray-400 font-medium">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-8 md:gap-10 lg:gap-y-0 mb-8 md:mb-10">
+          <div className="col-span-2 md:col-span-4 lg:col-span-4">
+            <div className="md:w-2/3 lg:w-4/5">
               <img
-                className="h-[40px] mb-8"
-                src="./public/logo-light.svg"
+                src="./logo-light.svg"
+                className="h-10 mb-5 lg:mb-3"
                 alt=""
               />
-              <div className="flex flex-col gap-3 ">
-                <p className=" text-start max-w-xs pr-27 text-gray-300">
-                  Departure defective arranging rapturous did believe him all
-                  had supported.
-                </p>
-                <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
+              <p className="mb-5">
+                Departure defective arranging rapturous did believe him all had
+                supported.
+              </p>
+              <div className="flex flex-col items-start gap-y-2">
+                <a
+                  href="tel:+1234 568 963"
+                  className="inline-flex gap-x-2 items-center duration-300 hover:text-blue-500"
+                >
+                  <BsTelephone />
                   +1234 568 963
                 </a>
-                <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
+                <a
+                  href="mailto:example@gmail.com"
+                  className="inline-flex gap-x-2 items-center duration-300 hover:text-blue-500"
+                >
+                  <BsEnvelope />
                   example@gmail.com
                 </a>
               </div>
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-20">
-              <div>
-                <h3 className="text-xl font-bold font-heading mb-8">Page</h3>
-                <div className=" flex flex-col gap-2">
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    About us
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Contact us
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    News and Blog
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Meet a Team
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold font-heading mb-8">Link</h3>
-                <div className=" flex flex-col gap-2">
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Sign up
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Sign in
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Privacy Policy
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Terms
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Cookie
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Support
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold font-heading mb-8">
-                  Global Site
-                </h3>
-                <div className=" flex flex-col gap-2">
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    India
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    California
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Indonesia
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Canada
-                  </a>
-                  <a href="#" className="hover:text-beautifulBlue duration-200 text-gray-300">
-                    Malaysia
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold font-heading mb-8">Booking</h3>
-                <div className=" flex flex-col gap-2 text-gray-300">
-                  <a
-                    href="#"
-                    className="hover:text-beautifulBlue duration-200 flex items-center gap-2"
-                  >
-                    <FaHotel /> Hotel
-                  </a>
-                  <a
-                    href="#"
-                    className="hover:text-beautifulBlue duration-200 flex items-center gap-2 "
-                  >
-                    <span className="rotate-90 text-2xl">
-                      <MdFlight />
-                    </span>{" "}
-                    Flight
-                  </a>
-                  <a
-                    href="#"
-                    className="hover:text-beautifulBlue duration-200 flex items-center gap-2"
-                  >
-                    <FaEarthAmericas /> Tour
-                  </a>
-                  <a
-                    href="#"
-                    className="hover:text-beautifulBlue duration-200 flex items-center gap-2"
-                  >
-                    <FaCar /> Cabs
-                  </a>
-                </div>
+          </div>
+          <div className="lg:col-span-2">
+            <div className="">
+              <h4 className="text-gray-100 text-xl font-heading font-bold mb-5">
+                Page
+              </h4>
+              <div className="flex flex-col items-start gap-y-2">
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  About us
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Contact us
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  News and Blog
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Meet a Team
+                </a>
               </div>
             </div>
           </div>
-          <div className="">
-            <h3 className="text-xl font-bold font-heading mb-8">Top Links</h3>
-            <div className="flex item-center flex-wrap gap-3 text-gray-300 ">
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Flights
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Hotels
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Tours
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Cabs
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                About
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Contact us
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Blogs
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Services
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Detail page
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Services
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Policy
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Testimonials
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Newsletters
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Podcasts
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Protests
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                NewsCyber
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Education
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Sports
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Tech and Auto
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Opinion
-              </a>
-              <a href="#" className="hover:text-beautifulBlue duration-200">
-                Share Market
-              </a>
-            </div>
-          </div>
-          <div className="flex justify-between items-center">
-            <div>
-              <h3 className="text-xl font-bold font-heading">
-                Payment & Security
-              </h3>
-              <div className="flex items-center gap-3 mt-2">
-                <a href="#header">
-                  <img src="./public/paypal.svg" className="h-[30px]" alt="" />
+          <div className="lg:col-span-2">
+            <div className="">
+              <h4 className="text-gray-100 text-xl font-heading font-bold mb-5">
+                Link
+              </h4>
+              <div className="flex flex-col items-start gap-y-2">
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Sign up
                 </a>
-                <a href="#header">
-                  <img src="./public/visa.svg" className="h-[30px]" alt="" />
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Sign in
                 </a>
-                <a href="#header">
-                  <img
-                    src="./public/mastercard.svg"
-                    className="h-[30px]"
-                    alt=""
-                  />
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Privacy Policy
                 </a>
-                <a href="#header">
-                  <img
-                    src="./public/expresscard.svg"
-                    className="h-[30px]"
-                    alt=""
-                  />
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Terms
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Cookie
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Support
                 </a>
               </div>
             </div>
-            <div>
-              <h3 className="text-xl font-bold font-heading">Follow us on</h3>
-              <div className="flex items-center gap-1 mt-2">
+          </div>
+          <div className="lg:col-span-2">
+            <div className="">
+              <h4 className="text-gray-100 text-xl font-heading font-bold mb-5">
+                Global Site
+              </h4>
+              <div className="flex flex-col items-start gap-y-2">
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  India
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  California
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Indonesia
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Canada
+                </a>
+                <a href="#!" className="duration-300 hover:text-blue-500">
+                  Malaysia
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="lg:col-span-2">
+            <div className="">
+              <h4 className="text-gray-100 text-xl font-heading font-bold mb-5">
+                Booking
+              </h4>
+              <div className="flex flex-col items-start gap-y-2">
                 <a
-                  href="#header"
-                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border duration-200 border-transparent bg-blue-400 text-white hover:bg-blue-500 hover:text-blue-100 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="duration-300 hover:text-blue-500 inline-flex items-center gap-x-2"
+                  href="#"
                 >
-                  <FaFacebookF />
+                  <FaHotel /> Hotel
                 </a>
                 <a
-                  href="#header"
-                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-pink-600 duration-200 text-white  hover:bg-pink-700 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="duration-300 hover:text-blue-500 inline-flex items-center gap-x-2"
+                  href="#"
                 >
-                  <FaInstagram />
+                  <FaPlane /> Flight
                 </a>
                 <a
-                  href="#header"
-                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-teal-400 text-white duration-200  hover:bg-teal-500 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="duration-300 hover:text-blue-500 inline-flex items-center gap-x-2"
+                  href="#"
                 >
-                  <FaTwitter />
+                  <FaEarthAmericas /> Tour
                 </a>
                 <a
-                  href="#header"
-                  className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-300 text-white duration-200  hover:bg-blue-400 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-blue-900 dark:text-blue-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="duration-300 hover:text-blue-500 inline-flex items-center gap-x-2"
+                  href="#"
                 >
-                  <FaLinkedinIn />
+                  <FaCar /> Cab
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <hr className="text-gray-700 text-xs font-light" />
-        <div className="py-5 flex justify-between items-center text-gray-300">
-          <p>
-            Copyrights ©2023 Booking. Build by{" "}
-            <a href="#" className="hover:text-beautifulBlue duration-200">
-              Webestica
+        <div className=" mb-8 md:mb-10">
+          <h4 className="text-gray-100 text-xl font-heading font-bold mb-5">
+            Top Links
+          </h4>
+          <div className="flex flex-wrap gap-3 gap-y-2">
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Flights
             </a>
-            .
-          </p>
-          <div className="flex items-center gap-3">
-            <a href="#" className="hover:text-beautifulBlue duration-200">
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Hotels
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Tours
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Cabs
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              About
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Contact us
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Blogs
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Services
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Detail page
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Services
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Policy
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Testimonials
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Newsletters
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Podcasts
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Protests
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              NewsCyber
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Education
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Sports
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Tech and Auto
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Opinion
+            </a>
+            <a href="#!" className="duration-300 hover:text-blue-500">
+              Share Market
+            </a>
+          </div>
+        </div>
+        <div className="flex justify-between">
+          <div className="">
+            <h4 className="text-gray-100 text-xl font-heading font-bold mb-5">
+              Payment & Security
+            </h4>
+            <div className="flex gap-x-3">
+              <a href="" className=" duration-300 hover:scale-105">
+                <img src="./paypal.svg" className="h-7" alt="" />
+              </a>
+              <a href="" className=" duration-300 hover:scale-105">
+                <img src="./visa.svg" className="h-7" alt="" />
+              </a>
+              <a href="" className=" duration-300 hover:scale-105">
+                <img src="./mastercard.svg" className="h-7" alt="" />
+              </a>
+              <a href="" className=" duration-300 hover:scale-105">
+                <img src="./expresscard.svg" className="h-7" alt="" />
+              </a>
+            </div>
+          </div>
+          <div className="">
+            <h4 className="text-gray-100 text-xl font-heading font-bold text-end mb-5">
+              Follow us on
+            </h4>
+            <div className="flex gap-x-3">
+              <a href="" className="">
+                <span className="inline-block p-2 bg-blue-500 text-white rounded duration-300 hover:bg-blue-600 hover:scale-105">
+                  <FaFacebookF />
+                </span>
+              </a>
+              <a href="" className="">
+                <span className="inline-block p-2 bg-pink-500 text-white rounded duration-300 hover:bg-pink-600 hover:scale-105">
+                  <FaInstagram />
+                </span>
+              </a>
+              <a href="" className="">
+                <span className="inline-block p-2 bg-sky-500 text-white rounded duration-300 hover:bg-sky-600 hover:scale-105">
+                  <FaTwitter />
+                </span>
+              </a>
+              <a href="" className="">
+                <span className="inline-block p-2 bg-cyan-500 text-white rounded duration-300 hover:bg-cyan-600 hover:scale-105">
+                  <FaLinkedinIn />
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-gray-800 my-5"></div>
+        <div className="flex flex-col lg:flex-row items-center gap-y-2 lg:gap-y-0 justify-between">
+          <p className="text-center md:text-start">Copyrights ©2023 Booking. Build by Webestica.</p>
+          <div className="flex flex-wrap lg:flex-nowrap justify-center gap-y-2 md:justify-end items-center gap-x-6">
+            <a href="#!" className="duration-300 hover:text-blue-500">
               Privacy policy
             </a>
-            <a href="#" className="hover:text-beautifulBlue duration-200">
+            <a href="#!" className="duration-300 hover:text-blue-500">
               Terms and conditions
             </a>
-            <a href="#" className="hover:text-beautifulBlue duration-200">
+            <a href="#!" className="duration-300 hover:text-blue-500">
               Refund policy
             </a>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

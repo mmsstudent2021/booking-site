@@ -1,14 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     "node_modules/preline/dist/*.js",
   ],
   darkMode: 'class',
-
   theme: {
-    
     fontFamily: {
       body: ["DM Sans", "sans-serif"],
       heading: ["Poppins", "sans-serif"],
@@ -21,19 +20,41 @@ export default {
       },
     },
     extend: {
-      fontFamily: {
-        "6xl": "4rem"
+      fontSize: {
+        "6xl": "4rem",
       },
       colors: {
         bgColor: "#FFF",
+        bgDarkModeColor: "#222529",
+        cardDarkModeColor: "#191B1D",
+        serviceCardDarkModeColor: "#2A2C31",
+        dropDownTextDarkModeColor: "#b0b0b8",
+        someGray: "#F5F5F6",
+        graysome: "#302f36",
+        grayPara: "#c5c6cc",
         headingColor: "#0b0a12",
         bodyColor: "#747579",
+        footerParaColor: "#c5c5c7",
+        "body-dark": "#222529",
+        dark: "#191b1d",
         beautifulBlue: "#5143d9",
+        hoverBgBeautifulBlue: "#4539b8",
+        darkModeBlue: "#9085E6",
+        darkModeBlue2: "#8e85e6",
+        darkModeBlue3: "#2D2F3D",
+        hoverDarkModeBlue: "#7A6DEB",
+        hoverBorderBeautifulBlue: "#4136ae",
         success: "#0CBC87",
         danger: "#D6293E",
         warning: "#F7C32E",
         info: "#17A2B8",
+        facebookBtn: "#5d82d1",
+        instagramBtn: "#c22b72",
+        twitterBtn: "#40bff5",
+        linkedinBtn: "#238cc8",
+        hrColor: "#85878a",
         blue: {
+          50: "#edecfb",
           100: "#dcd9f7",
           200: "#b9b4f0",
           300: "#978ee8",
@@ -75,35 +96,24 @@ export default {
           600: "#128293",
           700: "#0e616e",
           800: "#09414a",
-          900: "#052025"
-},
-// black: {
-//           100: "#d1d1d2",
-//           200: "#a3a4a5",
-//           300: "#757677",
-//           400: "",
-//           500: "",
-//           600: "#141617",
-//           700: "#0f1011",
-//           800: "#0a0b0c",
-//           900: "#050506"
-// },
-black: {
-          100: "#d5d6d7",
-          200: "#aaacae",
-          300: "#808386",
-          400: "#191b1d",
-          500: "#222529",
-          600: "#22262a",
-          700: "#1a1d20",
-          800: "#111315",
-          900: "#090a0b"
-},
+          900: "#052025",
+        },
+        black: {
+                  100: "#d5d6d7",
+                  200: "#aaacae",
+                  300: "#808386",
+                  400: "#191b1d",
+                  500: "#222529",
+                  600: "#22262a",
+                  700: "#1a1d20",
+                  800: "#111315",
+                  900: "#090a0b"
+        },
       },
     },
   },
   plugins: [
-    require("preline/plugin"),
+    require("preline/plugin"), 
     function ({ addComponents }) {
       addComponents({
         ".container": {

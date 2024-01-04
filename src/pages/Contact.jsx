@@ -12,15 +12,12 @@ const Contact = () => {
   return (
     <>
       <main className=" dark:bg-black-700">
-        
         <HeaderSection/>
         <ContactHeader />
         <FirstSection />
         <FormInput />
-        <Map />
-        
-        <Footer/>
-        
+        <Map />  
+        <Footer />
       </main>
       
     </>
