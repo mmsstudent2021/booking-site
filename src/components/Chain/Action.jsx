@@ -3,7 +3,10 @@ import React from "react";
 const Action = () => {
   return (
     <div className="container mx-auto">
-      <div className="bg-[url('./action.jpg')] bg-cover flex justify-center md:justify-end items-center rounded-2xl p-4 md:p-7 lg:p-10">
+      <div
+        className="bg-cover flex justify-center md:justify-end items-center rounded-2xl p-4 md:p-7 lg:p-10"
+        style={{ backgroundImage: "url('./action.jpg')" }}
+      >
         {/* Card */}
         <div className="p-5 md:p-7 lg:p-12 rounded-2xl bg-white dark:bg-cardDarkModeColor max-w-[400px]">
           <div className="flex flex-col md:flex-row md:items-center items-start justify-between mb-2">

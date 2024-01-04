@@ -589,7 +589,10 @@ const HotelChainNav = () => {
                         </div>
                       </div>
                       {/* Fourth Group */}
-                      <div className="relative mt-[25px] bg-[url('../../../src/img/headerBg.jpg')] bg-cover bg-left md:h-[180px] rounded-xl overflow-hidden  lg:h-[97px]">
+                      <div
+                        className="relative mt-[25px] bg-cover bg-left md:h-[180px] rounded-xl overflow-hidden lg:h-[97px]"
+                        style={{ backgroundImage: "url('./headerBg.jpg')" }}
+                      >
                         <div className="absolute top-0 left-0 z-10 bg-headingColor bg-opacity-50 w-full h-full "></div>
                         <div className="relative z-20 w-full max-h-full p-5 flex lg:flex-row flex-col justify-center items-start gap-4 lg:justify-between lg:items-center">
                           <div>
@@ -1031,7 +1034,10 @@ const HotelChainNav = () => {
                       </div>
                     </div>
                     {/* Fourth Group */}
-                    <div className="relative mt-[25px] bg-[url('./headerBg.jpg')] bg-cover bg-left md:h-[180px] rounded-xl overflow-hidden  lg:h-[97px]">
+                    <div
+                      className="relative mt-[25px] bg-cover bg-left md:h-[180px] rounded-xl overflow-hidden  lg:h-[97px]"
+                      style={{ backgroundImage: "url('./headerBg.jpg')" }}
+                    >
                       <div className="absolute top-0 left-0 z-10 bg-headingColor bg-opacity-50 w-full h-full "></div>
                       <div className="relative z-20 w-full max-h-full p-5 flex lg:flex-row flex-col justify-center items-start gap-4 lg:justify-between lg:items-center">
                         <div className="text-white">
