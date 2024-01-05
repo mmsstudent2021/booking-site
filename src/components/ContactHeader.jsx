@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import { FaAdjust } from "react-icons/fa";
 import { LiaAdjustSolid } from "react-icons/lia";
 import { BsSearch } from "react-icons/bs";
@@ -8,9 +8,15 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 
 const ContactHeader = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
     <header className="container ">
-      <section className="flex justify-between items-center gap-x-8 my-8">
+      <section className="flex justify-between items-center gap-x-8 my-5">
         <NavLink to="/">
           <img
             className="h-[40px] dark:hidden"
@@ -23,194 +29,219 @@ const ContactHeader = () => {
             alt=""
           />
         </NavLink>
-        <nav className="flex item-center gap-8">
-          {/* home */}
-          <div className="hs-dropdown relative inline-flex [--trigger:hover]">
-            <button
-              id="hs-dropdown-hover-event"
-              type="button"
-              className="hs-dropdown-toggle  inline-flex items-center gap-x-1 text-base font-medium rounded-lg  disabled:opacity-50 disabled:pointer-events-none hover:text-beautifulBlue   dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            >
-              Home
-              <svg
-                className=" w-4 h-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
 
-            <div
-              className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[10rem] bg-white shadow-xl rounded-lg p-3 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
-              aria-labelledby="hs-dropdown-hover-event"
-            >
-              <NavLink
-                className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                to="/"
+        <div className="flex gap-4 items-center">
+          <nav className="hidden lg:flex item-center gap-8">
+            {/* home */}
+            <div className="hs-dropdown relative inline-flex [--trigger:hover]">
+              <button
+                id="hs-dropdown-hover-event"
+                type="button"
+                className="hs-dropdown-toggle  inline-flex items-center gap-x-1 text-base font-medium rounded-lg  disabled:opacity-50 disabled:pointer-events-none hover:text-beautifulBlue   dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               >
-                Hotel Home
-              </NavLink>
-              <NavLink
-                className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                to="/hotel-chain"
-              >
-                Hotel Chain
-              </NavLink>
-              <a
-                className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Hotel Resort
-              </a>
-              <a
-                className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Flight Home
-              </a>
-              <a
-                className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Tour Home
-              </a>
-              <a
-                className="flex items-center justify-center gap-x-3.5  py-2 px-3 rounded-lg text-base hover:text-beautifulBlue text-bodyColor hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Cabs Home
-              </a>
-            </div>
-          </div>
-          {/* Listings */}
-          <div className="hs-dropdown relative inline-flex [--trigger:hover]">
-            <button
-              id="hs-dropdown-hover-two"
-              type="button"
-              className="hs-dropdown-toggle  inline-flex items-center gap-x-1 text-base font-medium rounded-lg     disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            >
-              Listings
-              <svg
-                className=" w-4 h-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
+                Home
+                <svg
+                  className=" w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
 
-            <div
-              className="hs-dropdown-menu  transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] bg-white shadow-xl rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
-              aria-labelledby="hs-dropdown-hover-two"
-            >
-              <a
-                className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-bodyColor hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
+              <div
+                className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[10rem] bg-white shadow-xl rounded-lg p-3 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+                aria-labelledby="hs-dropdown-hover-event"
               >
-                Newsletter
-              </a>
-              <a
-                className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-bodyColor hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Purchases
-              </a>
-              <a
-                className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Downloads
-              </a>
-              <a
-                className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Team Account
-              </a>
+                <NavLink
+                  className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  to="/"
+                >
+                  Hotel Home
+                </NavLink>
+                <NavLink
+                  className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  to="/hotel-chain"
+                >
+                  Hotel Chain
+                </NavLink>
+                <a
+                  className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Hotel Resort
+                </a>
+                <a
+                  className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Flight Home
+                </a>
+                <a
+                  className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Tour Home
+                </a>
+                <a
+                  className="flex items-center justify-center gap-x-3.5  py-2 px-3 rounded-lg text-base hover:text-beautifulBlue text-bodyColor hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Cabs Home
+                </a>
+              </div>
             </div>
-          </div>
-          {/* pages */}
-          <div className="hs-dropdown relative inline-flex [--trigger:hover]">
-            <button
-              id="hs-dropdown-hover-event"
-              type="button"
-              className="hs-dropdown-toggle  inline-flex items-center gap-x-1 text-base font-medium rounded-lg   disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            >
-              Pages
-              <svg
-                className=" w-4 h-4"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
+            {/* Listings */}
+            <div className="hs-dropdown relative inline-flex [--trigger:hover]">
+              <button
+                id="hs-dropdown-hover-two"
+                type="button"
+                className="hs-dropdown-toggle  inline-flex items-center gap-x-1 text-base font-medium rounded-lg     disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white  dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               >
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </button>
+                Listings
+                <svg
+                  className=" w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
 
-            <div
-              className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] bg-white drop-shadow-xl rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
-              aria-labelledby="hs-dropdown-hover-event"
-            >
-              <a
-                className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
+              <div
+                className="hs-dropdown-menu  transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] bg-white shadow-xl rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+                aria-labelledby="hs-dropdown-hover-two"
               >
-                About
-              </a>
-              <a
-                className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Contact
-              </a>
-              <a
-                className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Contact 2
-              </a>
-              <a
-                className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
-              >
-                Our Team
-              </a>
+                <a
+                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-bodyColor hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Newsletter
+                </a>
+                <a
+                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-bodyColor hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Purchases
+                </a>
+                <a
+                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Downloads
+                </a>
+                <a
+                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Team Account
+                </a>
+              </div>
             </div>
-          </div>
-          <a
-            href="#"
-            className="flex justify-center items-center duration-200 dark:text-white hover:text-beautifulBlue"
-          >
-            Components
-          </a>
-        </nav>
+            {/* pages */}
+            <div className="hs-dropdown relative inline-flex [--trigger:hover]">
+              <button
+                id="hs-dropdown-hover-event"
+                type="button"
+                className="hs-dropdown-toggle  inline-flex items-center gap-x-1 text-base font-medium rounded-lg   disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              >
+                Pages
+                <svg
+                  className=" w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+
+              <div
+                className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] bg-white drop-shadow-xl rounded-lg p-2 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+                aria-labelledby="hs-dropdown-hover-event"
+              >
+                <a
+                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  About
+                </a>
+                <a
+                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Contact
+                </a>
+                <a
+                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Contact 2
+                </a>
+                <a
+                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
+                  href="#"
+                >
+                  Our Team
+                </a>
+              </div>
+            </div>
+            <a
+              href="#"
+              className="flex justify-center items-center duration-200 dark:text-white hover:text-beautifulBlue"
+            >
+              Components
+            </a>
+          </nav>
+        </div>
         <div className="flex items-center justify-between gap-4">
-          <div className="hs-dropdown relative inline-flex mt-2 [--placement:bottom-right]">
+          <div
+            onClick={handleToggle}
+            className="flex items-center gap-2 cursor-pointer"
+          >
+            <div className="lg:hidden h-[22px] w-[22px] flex flex-col gap-1.5 items-center justify-center">
+              <div
+                className={`w-full h-[2px] bg-headingColor dark:bg-grayPara duration-200 ${
+                  toggle && "rotate-45 translate-y-2 "
+                }`}
+              ></div>
+              <div
+                className={`w-full h-[2px] bg-headingColor dark:bg-grayPara ${
+                  toggle && "opacity-0"
+                }`}
+              ></div>
+              <div
+                className={`w-full h-[2px] bg-headingColor dark:bg-grayPara duration-200 ${
+                  toggle && "-rotate-45 -translate-y-2"
+                }`}
+              ></div>
+            </div>
+          </div>
+          <div className="hs-dropdown relative inline-flex [--placement:bottom-right]">
             <button
               id="hs-dropdown-default"
               type="button"
-              className="hs-dropdown-toggle  inline-flex items-center gap-x-2 text-2xl   rotate-180 font-medium text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-yellow-400 dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="hs-dropdown-toggle inline-flex items-center gap-x-2 text-[26px]   rotate-180 font-medium text-yellow-400 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-yellow-400 dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             >
               <LiaAdjustSolid />
             </button>
@@ -239,11 +270,11 @@ const ContactHeader = () => {
               </a>
             </div>
           </div>
-          <div className="mt-1 mx-1 sm:mt-1 hs-dropdown relative sm:inline-flex z-20 [--auto-close:inside]">
+          <div className="hs-dropdown relative sm:inline-flex z-20 [--auto-close:inside]">
             <button
               id="hs-dropdown-auto-close-inside"
               type="button"
-              className="hs-dropdown-toggle  inline-flex items-center gap-x-2 text-xl text-bodyColor  disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className="hs-dropdown-toggle inline-flex items-center gap-x-2 text-xl text-bodyColor disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
             >
               <BsSearch />
             </button>
@@ -276,10 +307,10 @@ const ContactHeader = () => {
           </div>
           <button
             type="button"
-            className="py-1.5 px-3 inline-flex items-center gap-x-2 text-sm font-bold rounded-lg border border-transparent bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-bold rounded-lg border border-transparent bg-blue-500 text-white hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
           >
             <FaArrowRightToBracket />
-            Sign Up
+            <span className="hidden sm:inline-block">Sign Up</span>
           </button>
         </div>
       </section>

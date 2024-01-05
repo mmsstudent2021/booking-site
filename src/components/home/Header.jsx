@@ -14,7 +14,7 @@ import MoreLinkDropdown from "./MoreLinkDropdown";
 import NotificationDropdown from "./NotificationDropdown";
 import ProfileDropdown from "./ProfileDropdown";
 import "../../../node_modules/waypoints/lib/noframework.waypoints";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   const [fixedNavbar, setFixedNavbar] = useState(false);
@@ -40,9 +40,9 @@ const Header = () => {
       >
         <nav className="container" aria-label="Global">
           <div className="flex flex-wrap items-center justify-between relative">
-            <a
+            <Link
               className="flex-none text-xl font-semibold dark:text-white md:mr-8 xl:mr-5"
-              href="#"
+              to="/"
             >
               <img
                 src="./logo-dark.svg"
@@ -54,7 +54,7 @@ const Header = () => {
                 className="nav-brand h-7 xl:h-10 hidden dark:block"
                 alt=""
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="ms-auto md:ml-0 md:mr-auto xl:hidden hs-collapse-toggle inline-flex justify-center items-center gap-x-2 rounded-lg bg-transparent text-gray-800 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-400"
