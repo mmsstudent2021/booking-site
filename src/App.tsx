@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import "preline/preline";
 import { IStaticMethods } from "preline/preline";
+import OurTeam from "./pages/OurTeam";
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/hotel-chain" element={<Chain />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/our-team" element={<OurTeam />} />
         </Routes>
       </div>
     </div>

@@ -14,7 +14,7 @@ import MoreLinkDropdown from "./MoreLinkDropdown";
 import NotificationDropdown from "./NotificationDropdown";
 import ProfileDropdown from "./ProfileDropdown";
 import "../../../node_modules/waypoints/lib/noframework.waypoints";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [fixedNavbar, setFixedNavbar] = useState(false);
@@ -99,15 +99,15 @@ const Header = () => {
                           <FaEllipsis />
                         </button>
                         <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] xl:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 xl:w-64 hidden z-10 xl:mt-2 bg-white xl:shadow-md rounded-lg p-2 dark:bg-dark dark:divide-gray-700 before:absolute before:-end-5 before:top-0 before:h-full before:w-5 top-0 left-full">
-                          <Link className="nav-link sub-nav-link" to="/">
+                          <NavLink className="nav-link sub-nav-link" to="/">
                             Hotel Home
-                          </Link>
-                          <Link
+                          </NavLink>
+                          <NavLink
                             className="nav-link sub-nav-link"
                             to="/hotel-chain"
                           >
                             Hotel Chain
-                          </Link>
+                          </NavLink>
                           <a className="nav-link sub-nav-link" href="#">
                             Hotel Resort
                           </a>
@@ -282,15 +282,15 @@ const Header = () => {
                       <a className="nav-link sub-nav-link" href="#">
                         About
                       </a>
-                      <Link className="nav-link sub-nav-link" to="/contact">
+                      <NavLink className="nav-link sub-nav-link" to="/contact">
                         Contact
-                      </Link>
+                      </NavLink>
                       <a className="nav-link sub-nav-link" href="#">
                         Contact 2
                       </a>
-                      <a className="nav-link sub-nav-link" href="#">
+                      <NavLink className="nav-link sub-nav-link" to="/our-team">
                         Our Team
-                      </a>
+                      </NavLink>
                       <div className="hs-dropdown relative [--trigger:hover] [--strategy:static] xl:[--strategy:absolute] [--adaptive:none]">
                         <button
                           type="button"
