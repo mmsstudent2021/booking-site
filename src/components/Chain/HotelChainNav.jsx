@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../contexts/ThemeContext";
+import { NavLink } from "react-router-dom";
 
 const HotelChainNav = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,7 +15,7 @@ const HotelChainNav = () => {
   return (
     <header>
       <nav className="relative container mx-auto pt-4 lg:pb-2 pb-4 flex justify-between items-center">
-        <a href="#">
+        <NavLink to="/">
           <img
             className="h-[30px] sm:h-[40px] md:h-[60px] dark:hidden"
             src="./logo-hotel-light.svg"
@@ -23,7 +24,7 @@ const HotelChainNav = () => {
             className="h-[30px] sm:h-[40px] md:h-[60px] hidden dark:block"
             src="./logo-hotel-dark.svg"
           />
-        </a>
+        </NavLink>
 
         <div className="flex justify-between items-center gap-3 font-body">
           <div

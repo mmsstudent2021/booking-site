@@ -17,7 +17,7 @@ const Banner = () => {
                 src="./chain1.jpg"
                 className="-z-20 w-full h-[400px] lg:h-[680px] object-left-top object-cover rounded-2xl"
               />
-              <div className=" bg-black z-10 absolute left-0 top-0 w-full h-full opacity-30"></div>
+              <div className=" bg-black-900 z-10 absolute left-0 top-0 w-full h-full opacity-30"></div>
 
               <div className="absolute z-20 top-1/2 -translate-y-1/2 left-[6%] flex flex-col gap-1 max-w-[600px]">
                 <h6 className="font-heading font-medium text-base text-white">
@@ -42,7 +42,7 @@ const Banner = () => {
                 border={0}
                 allowFullScreen
               />
-              <div className="bg-black z-10 absolute left-0 top-0 w-full h-full opacity-30"></div>
+              <div className="bg-black-900 z-10 absolute left-0 top-0 w-full h-full opacity-30"></div>
               <div className="absolute top-0 z-20 flex flex-col items-center justify-center w-full h-full">
                 <div className="xl:px-[220px] lg:px-[50px] sm:px-[80px] px-[40px] flex flex-col justify-center gap-4">
                   <div className="text-center line-clamp-1 sm:line-clamp-none">
@@ -64,7 +64,7 @@ const Banner = () => {
       <div className="">
         <button
           type="button"
-          className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute top-1/2 lg:left-16 opacity-0 group-hover:lg:left-20 group-hover:opacity-100 duration-500 sm:left-5 group-hover:sm:left-10 left-4 group-hover:left-8 bg-opacity-40 z-40 -translate-y-1/2 inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-[46px] bg-black text-white rounded-full backdrop-blur-[5px]"
+          className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute top-1/2 lg:left-16 opacity-0 group-hover:lg:left-20 group-hover:opacity-100 duration-500 sm:left-5 group-hover:sm:left-10 left-4 group-hover:left-8 bg-opacity-40 z-40 -translate-y-1/2 inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-[46px] bg-black-900 text-white rounded-full backdrop-blur-[5px]"
         >
           <span className="text-2xl" aria-hidden="true">
             <svg
@@ -85,7 +85,7 @@ const Banner = () => {
         </button>
         <button
           type="button"
-          className="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute top-1/2 lg:right-16 opacity-0 group-hover:lg:right-20 group-hover:opacity-100 duration-500 sm:right-5 group-hover:sm:right-10 right-4 group-hover:right-8 -translate-y-1/2 inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-[46px] bg-black bg-opacity-40 text-white rounded-full backdrop-blur-[5px]"
+          className="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute top-1/2 lg:right-16 opacity-0 group-hover:lg:right-20 group-hover:opacity-100 duration-500 sm:right-5 group-hover:sm:right-10 right-4 group-hover:right-8 -translate-y-1/2 inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-[46px] bg-black-900 bg-opacity-40 text-white rounded-full backdrop-blur-[5px]"
         >
           <span className="sr-only">Next</span>
           <span className="text-2xl" aria-hidden="true">

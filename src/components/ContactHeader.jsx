@@ -5,16 +5,24 @@ import { BsSearch } from "react-icons/bs";
 import { FaArrowRightToBracket } from "react-icons/fa6";
 import { MdLightMode } from "react-icons/md";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const ContactHeader = () => {
   return (
-    <header  className="container " >
+    <header className="container ">
       <section className="flex justify-between items-center gap-x-8 my-8">
-        <div>
-          <img className="h-[40px] dark:hidden" src="./public/logo.svg" alt="" />
-          <img className="h-[40px] hidden dark:block" src="./public/logo-light.svg" alt=""/>
-
-        </div>
+        <NavLink to="/">
+          <img
+            className="h-[40px] dark:hidden"
+            src="./public/logo.svg"
+            alt=""
+          />
+          <img
+            className="h-[40px] hidden dark:block"
+            src="./public/logo-light.svg"
+            alt=""
+          />
+        </NavLink>
         <nav className="flex item-center gap-8">
           {/* home */}
           <div className="hs-dropdown relative inline-flex [--trigger:hover]">
@@ -44,18 +52,18 @@ const ContactHeader = () => {
               className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[10rem] bg-white shadow-xl rounded-lg p-3 mt-2 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
               aria-labelledby="hs-dropdown-hover-event"
             >
-              <a
+              <NavLink
                 className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
+                to="/"
               >
                 Hotel Home
-              </a>
-              <a
+              </NavLink>
+              <NavLink
                 className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
-                href="#"
+                to="/hotel-chain"
               >
                 Hotel Chain
-              </a>
+              </NavLink>
               <a
                 className="flex items-center justify-center gap-x-3.5 py-2 px-3 rounded-lg text-base text-bodyColor hover:bg-gray-100 focus:outline-none hover:text-beautifulBlue focus:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:bg-gray-700"
                 href="#"
@@ -190,7 +198,10 @@ const ContactHeader = () => {
               </a>
             </div>
           </div>
-          <a href="#" className="flex justify-center items-center duration-200 dark:text-white hover:text-beautifulBlue">
+          <a
+            href="#"
+            className="flex justify-center items-center duration-200 dark:text-white hover:text-beautifulBlue"
+          >
             Components
           </a>
         </nav>

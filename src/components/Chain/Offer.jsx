@@ -76,7 +76,7 @@ const Offer = () => {
           {/* Controls */}
           <div className="glide__arrows" data-glide-el="controls">
             <button
-              className="glide__arrow glide__arrow--left border-none rounded-full bg-black bg-opacity-40 p-4 opacity-0 group-hover:opacity-100 duration-500 backdrop-blur-[5px]"
+              className="glide__arrow glide__arrow--left border-none rounded-full bg-black-900 bg-opacity-40 p-4 opacity-0 group-hover:opacity-100 duration-500 backdrop-blur-[5px]"
               data-glide-dir="<"
             >
               <svg
@@ -95,7 +95,7 @@ const Offer = () => {
               </svg>
             </button>
             <button
-              className="glide__arrow glide__arrow--right bg-black bg-opacity-40 p-4 border-none rounded-full opacity-0 group-hover:opacity-100 duration-500 backdrop-blur-[5px]"
+              className="glide__arrow glide__arrow--right bg-black-900 bg-opacity-40 p-4 border-none rounded-full opacity-0 group-hover:opacity-100 duration-500 backdrop-blur-[5px]"
               data-glide-dir=">"
             >
               <svg
