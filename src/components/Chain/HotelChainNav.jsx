@@ -666,7 +666,7 @@ const HotelChainNav = () => {
                   <div
                     id="dropdown2"
                     type="button"
-                    className="hs-dropdown-toggle inline-flex w-full px-6 py-3 lg:px-4 lg:py-0 justify-between items-center gap-x-2"
+                    className="hs-dropdown-toggle inline-flex w-full px-6 py-3 lg:px-4 lg:py-0 justify-between items-center gap-x-2 hover:text-beautifulBlue dark:hover:text-darkModeBlue"
                   >
                     <a
                       className="text-headingColor dark:text-grayPara hover:text-beautifulBlue dark:hover:text-darkModeBlue"
@@ -680,7 +680,7 @@ const HotelChainNav = () => {
                       viewBox="0 0 24 24"
                       strokeWidth={3}
                       stroke="currentColor"
-                      className="w-3 h-3 mt-[2px] hover:text-beautifulBlue dark:hover:text-darkModeBlue"
+                      className="w-3 h-3 mt-[2px]"
                     >
                       <path
                         strokeLinecap="round"
@@ -741,7 +741,7 @@ const HotelChainNav = () => {
                 </div>
               </div>
               {/* Book stay button */}
-              <div className="hs-dropdown [--auto-close:outside] relative inline-flex">
+              <div className="hs-dropdown [--auto-close:inside] relative inline-flex">
                 <button
                   id="hs-dropdown-auto-close-outside"
                   type="button"
@@ -749,7 +749,7 @@ const HotelChainNav = () => {
                 >
                   Book stay
                   <svg
-                    className="hs-dropdown-open:rotate-180 w-4 h-4"
+                    className="w-4 h-4"
                     xmlns="http://www.w3.org/2000/svg"
                     width={24}
                     height={24}
@@ -764,11 +764,11 @@ const HotelChainNav = () => {
                   </svg>
                 </button>
                 <div
-                  className="z-10 hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[22rem] bg-white dark:bg-cardDarkModeColor shadow-2xl rounded-lg mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full"
+                  className="z-10 hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[22rem] bg-white dark:bg-cardDarkModeColor shadow-2xl rounded-lg mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full py-4"
                   aria-labelledby="hs-dropdown-auto-close-outside"
                 >
                   <ye-h6>
-                    <div className="font-heading font-bold px-6  py-4">
+                    <div className="font-heading font-bold px-6 py-4">
                       Search your Destination
                     </div>
                   </ye-h6>
