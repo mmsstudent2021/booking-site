@@ -6,20 +6,19 @@ import FormInput from "../components/FormInput";
 import Map from "../components/Map";
 import Footer from "../components/Footer";
 import HeaderSection from "../components/HeaderSection";
-
+import ScrollToTopButton from "../components/home/ScrollToTopButtom";
 
 const Contact = () => {
   return (
     <>
-      <main className=" dark:bg-black-700">
-        <HeaderSection/>
+      <main className=" dark:bg-bgDarkModeColor">
         <ContactHeader />
         <FirstSection />
         <FormInput />
-        <Map />  
+        <Map />
         <Footer />
+        <ScrollToTopButton />
       </main>
-      
     </>
   );
 };

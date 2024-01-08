@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaStar } from "react-icons/fa6";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const OurTeamFirst = () => {
+  // const { lightTheme, darkTheme, systemTheme, theme } =
+  //   useContext(ThemeContext);
   return (
-    <section className="mt-12 container">
-      <div className=" lg:flex  justify-between items-start gap-4 mt-20">
+    <section id="fs" className="container">
+      <div className=" lg:flex  justify-between items-start gap-4 mt-8 lg:mt-10">
         <div className="w-full md:w-full lg:max-w-3xl">
           <h1 className="text-[34px] md:text-[44px] lg:text-[56px] text-start dark:text-white font-heading font-bold leading-tight text-headingColor mb-5">
             Meet And Work With Our Amazing{" "}
@@ -26,7 +29,7 @@ const OurTeamFirst = () => {
             Preference any astonished unreserved.
           </p>
         </div>
-        <div className="p-6 bg-white dark:bg-black-800 shadow-translate rounded-xl shadow-lg mt-5">
+        <div className="p-6 bg-white dark:bg-black-800 shadow-translate rounded-xl shadow-lg mt-8 lg:mt-0">
           <p className=" text-base text-blue-500  font-body font-medium ">
             500,000 Happy Clients
           </p>
@@ -34,27 +37,27 @@ const OurTeamFirst = () => {
             <div className="flex items-center">
               <img
                 className="border h-[40px] rounded-full -mr-3.5"
-                src="./public/01.jpg"
+                src="./01.jpg"
                 alt=""
               />
               <img
                 className="border h-[40px] rounded-full -mr-3.5"
-                src="./public/02.jpg"
+                src="./02.jpg"
                 alt=""
               />
               <img
                 className="border h-[40px] rounded-full -mr-3.5"
-                src="./public/03.jpg"
+                src="./03.jpg"
                 alt=""
               />
               <img
                 className="border h-[40px] rounded-full -mr-3.5"
-                src="./public/04.jpg"
+                src="./04.jpg"
                 alt=""
               />
               <img
                 className="border h-[40px] rounded-full"
-                src="./public/05.jpg"
+                src="./05.jpg"
                 alt=""
               />
             </div>

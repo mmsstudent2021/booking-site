@@ -7,16 +7,14 @@ import Footer from "../components/Footer";
 import HeaderSection from "../components/HeaderSection";
 
 const OurTeam = () => {
-  
   return (
     <>
-      <div className="dark:bg-black-700">
-      <HeaderSection/>
-      <ContactHeader/>
-      <OurTeamFirst/>
-      <CardSection />
-      <Book/>
-      <Footer/>
+      <div className="dark:bg-bgDarkModeColorS">
+        <ContactHeader />
+        <OurTeamFirst />
+        <CardSection />
+        <Book />
+        <Footer />
       </div>
     </>
   );
