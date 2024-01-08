@@ -10,7 +10,7 @@ const Book = () => {
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-headingColor dark:text-white">
                 Let's Enjoy Your Trip With Booking
               </h3>
-              <img src="./public/plane.svg" className="h-[40px]" alt="" />
+              <img src="./plane.svg" className="h-[40px]" alt="" />
             </div>
             <p className="text-base lg:mr-4 mt-2 mb-2 font-body text-bodyColor dark:text-gray-300">
               He moonlights difficult engrossed it, sportsmen. Interested has
