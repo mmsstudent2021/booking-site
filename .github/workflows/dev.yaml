@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x]
     steps:
       - name: Checkout Code 🚚
         uses: actions/checkout@v3
@@ -19,9 +19,9 @@ jobs:
       - name: Upload to cPanel 🗄️
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-        #   server: ${{ secrets.FTP_SERVER }}
-        #   username: ${{ secrets.FTP_USERNAME }}
-        #   password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /
           exclude: |
             **/.git**
