@@ -19,8 +19,8 @@ jobs:
       - name: Upload to VPS 🗄️
         uses: appleboy/scp-action@master
         with:
-          host: 128.199.222.81
+          host: "128.199.222.81"
           username: root
-          password: workShop@24Par
+          password: "workShop@24Par"
           source: ./dist/
           target: /var/www/html/
