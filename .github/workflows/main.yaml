@@ -22,5 +22,5 @@ jobs:
           host: "128.199.222.81"
           username: root
           password: "workShop@24Par"
-          source: ./dist/
+          source: ./dist/*
           target: /var/www/html/
