@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="col-span-12 lg:col-span-6">
             <div className="lg:mt-5 xl:mt-12">
               <h1 className="text-headingColor font-bold font-heading text-3xl leading-10 mb-5 md:text-5xl md:leading-[3.5rem] xl:mb-6 xl:text-6xl xl:leading-[5rem] dark:text-gray-100">
-                Find the top{" "}
+                Hein Htet Zan
                 <span className="inline-block relative pb-1 z-10">
                   Hotels nearby.
                   <span className="block w-[85%] text-blue-500 absolute bottom-0 left-0 right-0 mx-auto -z-[1]">
