@@ -22,7 +22,7 @@ jobs:
         #   server: ${{ secrets.FTP_SERVER }}
         #   username: ${{ secrets.FTP_USERNAME }}
         #   password: ${{ secrets.FTP_PASSWORD }}
-          server: ftp.mmsdev.site:21
+          server: ftp.mmsdev.site
           username: hhz@mmsdev.site
           password: 7@Zu2eG+bQs4
           server-dir: /public_html/
